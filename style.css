@@ -11,7 +11,9 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 	list-style: none;
-	padding: 10px 0px;
+	padding-top: 25px;
+	width: 90%;
+	margin: auto;
 }
 
 nav ul li a {
@@ -19,6 +21,26 @@ nav ul li a {
 	font-family: din alternate;
 	text-transform: uppercase;
 	font-size: 20px;
+	padding: 0px 15px;
+}
+
+nav ul li a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.link-anim::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width 0.5s;
+}
+
+.link-anim:hover::after {
+	width: 100%;
+	transition: width 0.5s;
 }
 
 #iroh {
@@ -28,7 +50,7 @@ nav ul li a {
 	width: 100%;
 	color: white;
 	margin-top: -10px;
-	height: 600px;
+	height: 650px;
 }
 
 .iroh-title {
@@ -36,7 +58,7 @@ nav ul li a {
 	display; flex;
 	text-align: center;
 	position: relative;
-	top: 120px;
+	top: 145px;
 }
 
 #iroh h1 {
@@ -69,7 +91,7 @@ nav ul li a {
 .project-front {
 	background: yellow;
 	width: 100%;
-	height: 450px;
+	height: 650px;
 	display: table;
 }
 
@@ -82,7 +104,7 @@ nav ul li a {
 }
 
 #minkebell {
-	background: url(img/guitar-background.jpg);
+	background: url(img/cass.jpeg);
 	background-size: cover;
 }
 
@@ -112,6 +134,7 @@ nav ul li a {
 #rpc {
 	background: url(img/coffee4.jpg);
 	background-size: cover;
+
 }
 
 #rpc h1 {
@@ -146,18 +169,33 @@ nav ul li a {
 
 #about {
 	display: block;
-	width: 100%:
-	height: 500px;
+	width: 100%;
+	height: 650px;
 }
 
 #first {
 	background: #12537D;
 	color: white;
-	height: 400px;
+	height: 650px;
+	display: table;
+}
+
+.content-sm {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 620px;
+	max-width: 500px;
+	margin: auto;
 }
 
 #who {
 	border-bottom: solid 1px white;
+	padding-bottom: 25px;
+}
+
+#bells {
+	padding-top: 25px;
 }
 
 #second {
@@ -176,10 +214,22 @@ nav ul li a {
 	font-family: Varela Round;
 }
 
-.about-first, .about-second {
-	max-width: 400px;
-	display: block;
-	margin: auto;
+#where {
+	padding-bottom: 7px;
+}
+
+#about #illustration {
+	border-top: solid 1px #12537d;
+}
+
+#about #illustration #circle {
+	background: #12537d;
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	position: relative;
+	left: 90px;
+	top: 30px;
 }
 
 /*********************************
