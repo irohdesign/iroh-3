@@ -28,7 +28,7 @@ nav ul li a {
 	width: 100%;
 	color: white;
 	margin-top: -10px;
-	height: 450px;
+	height: 600px;
 }
 
 .iroh-title {
@@ -36,7 +36,7 @@ nav ul li a {
 	display; flex;
 	text-align: center;
 	position: relative;
-	top: 60px;
+	top: 120px;
 }
 
 #iroh h1 {
@@ -48,7 +48,7 @@ nav ul li a {
 	padding-top: 35px;
 	border-bottom: 1px solid white;
 	border-top: 1px solid white;
-	letter-spacing: 20px;
+	letter-spacing: 60px;
 }
 
 #iroh .circle {
@@ -56,7 +56,7 @@ nav ul li a {
 	width: 190px;
 	border-radius: 100%;
 	position: relative;
-	left: -10px;
+	left: -30px;
 	top: 10px;
 	background: white;
 	display: inline-block;
