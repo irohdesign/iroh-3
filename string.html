@@ -22,29 +22,48 @@
 <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	
   </head>
-  
-  <section id="application">
-	  <h1>Can't figure out which string is for you?</h1>
-	  
-	  <div class="row">
-		  <form class="col-sm-8 col-sm-offset-2" action="string.php" method="post">
-			<textarea class="form-control input-lg" placeholder="Beginner or Intermediate?" name="experience"></textarea>  
-			<button type="submit" class="btn btn-primary" name="exp_submit">Enter</button>
-		  </form>
-	  </div>
-  </section>
-  	 
-  	 
-  	 <!--
-  	  <footer>
-		  <h3>Iroh Design &copy; 2018</h3>
-	  </footer>
-	  
-	   <!-- Bootstrap core JavaScript
-    ================================================== -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    
-  </body>
+  <div id="string-app">
+	  <h1>String Theory Application</h1>
+	  
+	  <p>Can't figure out which gauge string you should be using?</p>
+	
+		
+	<form id="exp-form">
+		<p>
+			<input type="text" name="experience">
+		</p>
+		
+		<input type="submit" value="submit">
+	</form>
+	  
+	  <p id="result"></p>
+	  
+	  <script>
+		  var form = document.getElementById('exp-form');
+		  form.onsubmit = function(event) {
+			event.preventDefault();
+			console.log(form.experience.value); 
+			
+			var experience = form.experience.value;
+						
+			var result = document.getElementById("result");
+			
+			if(experience === "beginner") {
+				result.innerHTML = "You should buy light gauge strings";
+			} else if(experience === "intermediate") {
+				result.innerHTML = "You should buy medium gauge strings";
+			} else if(experience === "expert") {
+				result.innerHTML = "You should buy heavy gauge strings";
+			} else {
+				window.alert("you need to pick one of the three options");
+			}
+			
+			};
+		  
+		  
+	  </script>
+	    
+  <script src="functions.js"></script>
+ 
+  
