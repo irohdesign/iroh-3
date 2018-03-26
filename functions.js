@@ -4,6 +4,7 @@ var form = document.getElementById('exp-form');
 			console.log(form.stringTheory.value); 
 			
 			var stringTheory = form.stringTheory.value;
+			
 						
 			var result = document.getElementById("result");
 			
@@ -20,7 +21,9 @@ var form = document.getElementById('exp-form');
 			} else if(stringTheory === "metal") {
 				document.getElementById("metal").style.display = "block";
 			} else {
-				window.alert("you need to pick one of the three options");
+				window.alert("You need to enter one of these options: Beginner, Experienced, Rock, Jazz, Blues or Metal");
 			}
+			
+			document.getElementById('exp-form').reset();
 			
 			};
