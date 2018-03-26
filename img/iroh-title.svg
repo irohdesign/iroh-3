@@ -7,10 +7,14 @@
 	.st1{fill:#FFFFFF;}
 	.st2{font-family:'Aldrich-Regular';}
 	.st3{font-size:130px;}
-	.st4{letter-spacing:24;}
+	.st4{letter-spacing:23;}
+	.st5{fill:#FFFFFF;stroke:#12537D;stroke-width:4;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
 </style>
 <rect class="st0" width="567.6" height="294.1"/>
 <text transform="matrix(1 0 0 1 86.8562 188.2928)" class="st1 st2 st3 st4">IR</text>
 <text transform="matrix(1 0 0 1 393.5709 187.4515)" class="st1 st2 st3">H</text>
 <circle class="st1" cx="316.7" cy="142.2" r="52.4"/>
+<line class="st5" x1="278" y1="180.3" x2="358.8" y2="99.6"/>
+<line class="st6" x1="95.6" y1="210.2" x2="487.8" y2="210.2"/>
 </svg>

@@ -1,0 +1,75 @@
+#background {
+	background: rgba(140, 169, 196, 0.26);
+	padding: 15px;
+}
+
+.string-content {
+	background: white;
+	max-width: 600px;
+	margin: 10px auto;
+	padding: 5px 20px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px black;
+	display: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+	padding-bottom: 10px;
+	font-family: 'varela round';
+}
+
+p {
+	font-family: helvetica;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+#string-app {
+	max-width: 600px;
+	background: #8DA9C4;
+	margin: auto;
+	text-align: center;
+}
+
+input[type="text"] {
+	width: 75%;
+	padding: 5px;
+	border-radius: 50px;
+	border: none;
+	margin: auto;
+	box-shadow: 0px 3px black;
+}
+
+::placeholder {
+	text-align: center;
+	color: red;
+	font-family: 'varela round';
+}
+
+#guitar-circle {
+	background: white;
+	display: inline-block;
+	height: 150px;
+	width: 150px;
+	border-radius: 100%;
+	margin: auto;
+	border: double #134074 8px;
+}
+
+#guitar-circle img {
+	height: 120px;
+	position: relative;
+	top: 11px;
+	margin: auto;
+	transform: rotate(-44deg);
+}

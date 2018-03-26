@@ -1,10 +1,13 @@
 body, html {
 	height: 100%;
+	width: 100%:
 }
 
 nav {
 	background: black;
-	margin-bottom: 0px;
+	position: absolute;
+	width: 100%;
+	top: 0px;
 }
 
 nav ul {
@@ -43,45 +46,31 @@ nav ul li a:hover {
 	transition: width 0.5s;
 }
 
-#iroh {
-	background: #12537D;
+#title {
+	height: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	width: 100%;
-	color: white;
-	margin-top: -10px;
-	height: 650px;
-}
-
-.iroh-title {
-	position: relative;
-	display; flex;
 	text-align: center;
-	position: relative;
-	top: 145px;
 }
 
-#iroh h1 {
-	font-size: 250px;
-	padding: 0px;
-	font-family: aldrich;
-	margin: 0px;
-	display: inline-block;
-	padding-top: 35px;
-	border-bottom: 1px solid white;
-	border-top: 1px solid white;
-	letter-spacing: 60px;
+#title {
+	height: 650px;
+	background: url(waves.jpeg);
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
 }
 
-#iroh .circle {
-	height: 190px;
-	width: 190px;
-	border-radius: 100%;
-	position: relative;
-	left: -30px;
-	top: 10px;
+#title h1 {
+	font-family: varela round;
+	letter-spacing: 10px;
+	font-size: 8em;
+	text-shadow: 3px 8px #324584;
+}
+
+#about {
 	background: white;
-	display: inline-block;
 }
 
 /*********************************
