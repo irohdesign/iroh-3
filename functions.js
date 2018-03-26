@@ -1,18 +1,24 @@
 var form = document.getElementById('exp-form');
 		  form.onsubmit = function(event) {
 			event.preventDefault();
-			console.log(form.experience.value); 
+			console.log(form.stringTheory.value); 
 			
-			var experience = form.experience.value;
+			var stringTheory = form.stringTheory.value;
 						
 			var result = document.getElementById("result");
 			
-			if(experience === "beginner") {
-				result.innerHTML = "You should buy light gauge strings";
-			} else if(experience === "intermediate") {
-				result.innerHTML = "You should buy medium gauge strings";
-			} else if(experience === "expert") {
-				result.innerHTML = "You should buy heavy gauge strings";
+			if(stringTheory === "beginner") {
+				document.getElementById("beginner").style.display = "block";
+			} else if(stringTheory === "experienced") {
+				document.getElementById("experienced").style.display = "block";
+			} else if(stringTheory === "rock") {
+				document.getElementById("rock").style.display = "block";
+			} else if(stringTheory === "jazz") {
+				document.getElementById("jazz").style.display = "block";
+			} else if(stringTheory === "blues") {
+				document.getElementById("blues").style.display = "block";
+			} else if(stringTheory === "metal") {
+				document.getElementById("metal").style.display = "block";
 			} else {
 				window.alert("you need to pick one of the three options");
 			}
