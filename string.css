@@ -39,6 +39,7 @@ h2 {
 	background: #8DA9C4;
 	margin: auto;
 	text-align: center;
+	padding: 10px;
 }
 
 input[type="text"] {
@@ -52,11 +53,23 @@ input[type="text"] {
 
 ::placeholder {
 	text-align: center;
-	color: red;
+	color: #999;
 	font-family: 'varela round';
 }
 
+#back-circle {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	background: #134074;
+	display: inline-block;
+	width: 155px;
+	height: 155px;
+	border-radius: 100%;
+}
+
 #guitar-circle {
+	position: relative;
+	top: 2px;
 	background: white;
 	display: inline-block;
 	height: 150px;
