@@ -39,10 +39,16 @@
 		
 		
 		<form id="exp-form">
-			<p>
-				<input type="text" name="stringTheory" placeholder="Experience Level / Genre">
-			</p>
-			
+				<input type="text" name="years" min="0" max="15" placeholder="Years of Experience">
+				
+				<select>
+					<option value="" disabled selected>Genre</option>
+					<option value="jazz">Jazz</option>
+					<option value="rock">Rock</option>
+					<option value="blues">Blues</option>
+					<option value="metal">Metal</option>
+				</select>
+				
 			<input type="submit" value="submit">
 		</form>
 

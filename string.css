@@ -1,6 +1,6 @@
 #background {
 	background: rgba(140, 169, 196, 0.26);
-	padding: 15px;
+	padding: 200px 15px;
 }
 
 .string-content {
@@ -9,7 +9,7 @@
 	margin: 10px auto;
 	padding: 5px 20px;
 	border-radius: 5px;
-	box-shadow: 1px 1px 4px black;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
 	display: none;
 }
 
@@ -40,38 +40,50 @@ h2 {
 }
 
 #string-app {
-	max-width: 600px;
+	max-width: 400px;
 	background: #8DA9C4;
 	margin: auto;
 	text-align: center;
 	padding: 10px;
 	border-radius: 10px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
 }
 
 input[type="text"] {
 	width: 55%;
-	padding: 5px;
-	border-radius: 50px;
+}
+
+select,
+input[type="text"] {
+	min-width: 250px;
+	border-radius: 4px;
 	border: none;
-	margin: auto;
-	box-shadow: 0px 3px black;
+	margin: 12px auto;
+	box-shadow: 1px 1px grey;
+	text-align: center;
+	font-family: 'varela round';
+	background: #ebeaea;
+	padding-left: 6px;
+
 }
 
 input[type="submit"] {
 	width: 35%;
-	padding: 5px;
 	background: #134074;
 	color: white;
 	border: none;
-	border-radius: 25px;
+	border-radius: 4px;
 	letter-spacing: 1px;
-	margin: 15px auto;
+	margin: 10px auto;
 	font-family: 'varela round';
 }
 
+input {
+	display: block;
+}
+
 ::placeholder {
-	text-align: center;
-	color: #999;
+	color: black;
 	font-family: 'varela round';
 }
 
@@ -109,5 +121,5 @@ input[type="submit"] {
 #inner {
 	border: solid 2px white;
 	border-radius: 10px;
-	padding: 20px;
+	padding: 80px 0px;
 }
