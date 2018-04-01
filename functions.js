@@ -3,7 +3,7 @@ var form = document.getElementById('exp-form');
 			event.preventDefault();
 
 			
-			var yearsData = form.years.value;	
+			var yearsData = form.years.value;
 			
 			if(0 <= yearsData <= 2) {
 				document.getElementById("beginner").style.display = "block";
@@ -21,38 +21,38 @@ var form = document.getElementById('exp-form');
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
-			} 
+			}
 			
-			if (stringTheory === "rock") {
+			var genreData = document.getElementById("genre").value; 
+			
+			if (genreData === "rock") {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "block";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
-			} else if(stringTheory === "jazz") {
+			} else if(genreData === "jazz") {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "block";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
-			} else if(stringTheory === "blues") {
+			} else if(genreData === "blues") {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "block";
 				document.getElementById("metal").style.display = "none";
-			} else if(stringTheory === "metal") {
+			} else if(genreData === "metal") {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "block";
-			} else {
-				window.alert("You need to enter one of these options: Beginner, Experienced, Rock, Jazz, Blues or Metal");
 			}
 			
 			document.getElementById('exp-form').reset();
