@@ -3,26 +3,27 @@ var form = document.getElementById('exp-form');
 			event.preventDefault();
 
 			
-			var rawData = form.stringTheory.value;
-			var stringTheory = rawData.toLowerCase();
-						
-			var result = document.getElementById("result");
+			var yearsData = form.years.value;	
 			
-			if(stringTheory === "beginner") {
+			if(0 <= yearsData <= 2) {
 				document.getElementById("beginner").style.display = "block";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
-			} else if(stringTheory === "experienced") {
+			}
+			
+			if (yearsData >= 3) {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "block";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
-			} else if(stringTheory === "rock") {
+			} 
+			
+			if (stringTheory === "rock") {
 				document.getElementById("beginner").style.display = "none";
 				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "block";
