@@ -1,7 +1,7 @@
 
 #background {
 	background: rgba(140, 169, 196, 0.26);
-	padding: 100px 15px;
+	padding: 50px 15px;
 }
 
 a {
@@ -19,7 +19,7 @@ a {
 }
 
 img {
-	max-width: 100%;
+	width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -52,6 +52,12 @@ h2 {
 	padding: 10px;
 	border-radius: 10px;
 	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+}
+
+#inner {
+	border: solid 2px white;
+	border-radius: 10px;
+	padding: 80px 0px;
 }
 
 input[type="number"] {
@@ -123,22 +129,3 @@ input {
 	transform: rotate(-44deg);
 }
 
-/*
-#back-color {
-	position: absolute;
-	background: pink;
-	height: 100%;
-	width: 100%;
-}
-
-#back-circle:hover #back-color {
-	transform: translate(100%);
-	transition: 2s ease;
-}
-*/
-
-#inner {
-	border: solid 2px white;
-	border-radius: 10px;
-	padding: 80px 0px;
-}
