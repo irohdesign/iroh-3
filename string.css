@@ -1,12 +1,12 @@
 #background {
 	background: rgba(140, 169, 196, 0.26);
-	padding: 200px 15px;
+	padding: 100px 15px;
 }
 
 .string-content {
 	background: white;
 	max-width: 600px;
-	margin: 10px auto;
+	margin: 40px auto 10px;
 	padding: 5px 20px;
 	border-radius: 5px;
 	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
@@ -49,18 +49,18 @@ h2 {
 	box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
 }
 
-input[type="text"] {
+input[type="number"] {
 	width: 55%;
 }
 
 select,
-input[type="text"] {
+input[type="number"] {
 	min-width: 250px;
 	border-radius: 4px;
 	border: none;
 	margin: 12px auto;
 	box-shadow: 1px 1px grey;
-	text-align: center;
+	text-align: left;
 	font-family: 'varela round';
 	background: #ebeaea;
 	padding-left: 6px;
