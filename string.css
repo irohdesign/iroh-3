@@ -1,6 +1,11 @@
+
 #background {
 	background: rgba(140, 169, 196, 0.26);
 	padding: 100px 15px;
+}
+
+a {
+	color: black;
 }
 
 .string-content {
@@ -95,28 +100,42 @@ input {
 	width: 155px;
 	height: 155px;
 	border-radius: 100%;
+	position: relative;
 }
 
-#guitar-circle {
+.guitar-circle {
 	position: relative;
-	top: 2px;
-	background: white;
+	top: 7px;
+	left: 0px;
 	display: inline-block;
-	height: 150px;
-	width: 150px;
+	height: 140px;
+	width: 140px;
 	border-radius: 100%;
 	margin: auto;
-	border: double #134074 8px;
+	border: double white 6px;
 }
 
-#guitar-circle img {
-	height: 120px;
+.guitar-circle img {
+	height: 110px;
 	position: relative;
-	top: 11px;
+	top: 12px;
 	margin: auto;
 	transform: rotate(-44deg);
 }
 
+/*
+#back-color {
+	position: absolute;
+	background: pink;
+	height: 100%;
+	width: 100%;
+}
+
+#back-circle:hover #back-color {
+	transform: translate(100%);
+	transition: 2s ease;
+}
+*/
 
 #inner {
 	border: solid 2px white;

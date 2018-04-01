@@ -26,21 +26,28 @@ var form = document.getElementById('exp-form');
 			var genreData = document.getElementById("genre").value; 
 			
 			if (genreData === "rock") {
+				document.getElementById("beginner").style.display = "none";
 				document.getElementById("rock").style.display = "block";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
 			} else if(genreData === "jazz") {
+				document.getElementById("beginner").style.display = "none";
+				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "block";
 				document.getElementById("blues").style.display = "none";
 				document.getElementById("metal").style.display = "none";
 			} else if(genreData === "blues") {
+				document.getElementById("beginner").style.display = "none";
+				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "block";
 				document.getElementById("metal").style.display = "none";
 			} else if(genreData === "metal") {
+				document.getElementById("beginner").style.display = "none";
+				document.getElementById("experienced").style.display = "none";
 				document.getElementById("rock").style.display = "none";
 				document.getElementById("jazz").style.display = "none";
 				document.getElementById("blues").style.display = "none";

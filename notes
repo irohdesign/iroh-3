@@ -1,1 +1,18 @@
 try using an effect where you have images inside of a phone or laptop and you hover over the different options with the images showing with corresponding item
+
+add links to the string options so people can click through to the strings online
+
+center the input text on string theory
+
+add a collapse button on the result, in case someone wants to get rid of it
+
+replace beginner/experience with number of years played
+	>= 1, light
+	2 <= x <= 4 medium, look genre specific
+	5+ heavier, look genre specific
+	
+dropdown menu for genres
+
+animate the guitar when people press enter? add class toggle - animate the border radius of the circle, but not of the actual dark color, make it so it's a clear line across
+
+explain how i didn't use a reset button, just programmed in the javascript so that endless results don't stack up
