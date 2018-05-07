@@ -102,52 +102,73 @@
 	  <h2>Design Process</h2>
 	  
 	  <div class="container">
-		  <h4>Mobile-First Approach</h4>
+		  <h3>Mobile-First Approach</h3>
 		  <p>Tourists primarily search for food using their phones. I prioritized the mobile user experience so that customers would be able to find the store while visiting nearby attractions.</p>
 	  </div>
 	  
-	  <article class="sketches">
-		  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-				  <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-				  <li data-target="#carouselIndicators" data-slide-to="1"></li>
-				  <li data-target="#carouselIndicators" data-slide-to="2"></li>
-			  </ol><!-- end of carousel-indicators -->
-			  <div class="carousel-inner">
-				  <div class="carousel-item active">
-					  
-				  </div><!-- end of carousel-item -->
-				  
-				   <div class="carousel-item">
-					  
-				  </div><!-- end of carousel-item -->
-				  
-				   <div class="carousel-item">
-					  
-				  </div><!-- end of carousel-item -->
-			  </div><!-- end of carousel-inner -->
-			  
-			  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-				  <span class="carousel-control-prev-icon"></span>
-				  <span class="sr-only">Previous</span>
-			  </a><!-- end of control-prev -->
-			  
-			  <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-				  <span class="carousel-control-next-icon"></span>
-				  <span class="sr-only">Next</span>
-			  </a><!-- end of control-next -->
-		  </div><!-- end of carouselIndicators -->
-	  </article>
+			  <div id="sketchCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+		            <!-- indicators -->
+		            <ol class="carousel-indicators">
+		                <li data-target="#sketchCarousel" data-slide-to="0" class="active"></li>
+		                <li data-target="#sketchCarousel" data-slide-to="1"></li>
+		                <li data-target="#sketchCarousel" data-slide-to="2"></li>
+		            </ol>
+		            <!-- wrapper for the slides -->
+		            <div class="carousel-inner" role="listbox">
+		                <div class="item active">
+		                    <img src="img/sketch/rpc-home.png">
+		                    
+		                    <div class="sketchComment">
+			                    <h4>High Contrast Logo</h4>
+			                    <p>Branding is front and center. Better legibility if background load is delayed.</p>
+		                    </div>
+		                    
+		                    <div class="sketchComment">
+			                    <h4>Collapsed Menu</h4>
+			                    <p>Smooth scroll animation for better interactions. Simple, clear navigation across the site with no exterior links to slow down website.</p>
+		                    </div>
+		                    
+		                    <div class="sketchComment">
+			                    <h4>Solid Background</h4>
+			                    <p>Faster, more consistent load on mobile devices.</p>
+		                    </div>
+		                </div>
+		                <div class="item">
+		                    <img src="img/sketch/rpc-menu.png">
+		                </div>
+		                <div class="item">
+		                    <img src="img/sketch/rpc-about.png">
+		                </div>
+		            </div>
+		            <!-- controls -->
+		            <a class="left carousel-control" href="#sketchCarousel" role="button" data-slide="prev">
+		                <span class="glyphicon glyphicon-chevron-left"></span>
+		                <span class="sr-only">Previous</span>
+		            </a>
+		            <a class="right carousel-control" href="#sketchCarousel" role="button" data-slide="next">
+		                <span class="glyphicon glyphicon-chevron-right"></span>
+		                <span class="sr-only">Next</span>
+		            </a> 
+		        </div><!-- end of carousel -->
+	<div class="container">
+		<h3>Prioritizing User Experience</h3>
+		<p>I used Bootstrap and jQuery to build an interactive menu based on tabs. Users now have access to an entire menu without having to open a separate document or webpage.</p>
+
+<p>The menu's tabs save valuable screen real estate and minimize unnecessary scrolling. The smooth scroll improves user experience and reinforces the availability to the rest of the page.</p>
+	</div>
+	
+	<article id="branding">
+		<div class="container row"></div><!-- end of container -->
+	</article><!-- end of branding -->
   </section>
   
 
-  <script src="main.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    
+ 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 
   </body>
