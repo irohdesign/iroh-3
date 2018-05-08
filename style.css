@@ -1,3 +1,11 @@
+/* COLORS 
+BLUE SAPPHIRE : #12537D
+DARK IMPERIAL BLUE : #164869
+PRUSSIAN BLUE(1) : #0C3C5A
+PRUSSIAN BLUE(2) : #093049
+HARVARD CRIMSON : #D0021B
+*/
+
 /* GLOBAL */
 a:hover {
 	text-decoration: none;
@@ -8,25 +16,40 @@ a:hover {
 	margin: auto;
 }
 
+* { 
+	font-family: Varela Round;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Din Alternate;
+}
+
+img {
+	max-width: 100%;
+}
+
 /* NAV */
 
 .navbar {
 	background: black;
 	border-radius: 0px;
+	height: 50px;
 }
 
 .navbar a {
 	color: white;
 	font-family: Din Alternate;
 	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 1px;
 }
 
 #top-nav ul {
 	display: flex;
 	width: 100%;
 	list-style: none;
-	margin-top: 8px;
-	padding: 10px 0px;
+	position: relative;
+	top: 12px;
 	justify-content: space-around;
 }
 
@@ -60,7 +83,7 @@ a:hover {
 
 .link-box {
 	text-align: center;
-	padding: 30px 0px;
+	padding: 30px 0px 10px 0px;
 }
 
 .link-box a {
@@ -71,16 +94,23 @@ a:hover {
 	font-family: Varela Round;
 	letter-spacing: 1px;
 	font-size: 14px;
+	transition: 1s ease;
+}
+
+.link-box a:hover {
+	background: #666;
+	transition: 1s ease;
 }
 
 #link-line {
 	background: black;
-	height: 3px;
+	height: 2px;
 	position: relative;
 	top: 42px;
 }
 
 .drop-content ul {
+	display: none;
 	text-align: center;
 	list-style: none;
 	padding: 0px;
@@ -101,6 +131,10 @@ a:hover {
 
 .drop-content a:hover {
 	border-bottom: solid 3px #4A90E2;
+}
+
+#context {
+	margin: 20px auto;
 }
 
 .bracket {
@@ -132,6 +166,64 @@ a:hover {
 	color: red;
 }
 
+#design h2,
+#dev h2,
+#results h2 {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#design .container,
+#dev .container,
+#results .container {
+	max-width: 800px;
+	margin: auto;
+	padding: 20px;
+}
+
+.head-box {
+	background: black;
+	color: white;
+	display: inline-block;
+	padding: 5px 10px;
+	font-family: Din Alternate;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	font-size: 40px;
+}
+
+.head-line {
+	height: 3px;
+	background: black;
+	position: relative;
+	top: -37px;
+	z-index: -1;
+}
+
+#roadblock {
+	background: #12537D;
+	color: white;
+	padding: 30px;
+}
+
+#roadblock h2 {
+	margin: 0px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 35px;
+}
+
+#roadblock img {
+	display: block;
+	margin: 10px auto;
+	height: 100px;
+}
+
+#roadblock .container {
+	line-height: 25px;
+	max-width: 650px;
+}
+
 /* RPC CUSTOM STYLES */
 #rpc-head {
 	background: url('img/waves.jpeg');
@@ -152,4 +244,40 @@ a:hover {
 	height: 250px;
 	margin: auto;
 	border-radius: 100%;
+}
+
+#challenge {
+	background: black;
+	color: white;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+#challenge .container {
+	max-width: 800px;
+	font-size: 16px;
+}
+
+#challenge strong {
+	color: yellow;
+}
+
+#branding {
+	background: black;
+	color: white;
+}
+
+#branding .container {
+	max-width: 1000px; 
+	margin: auto;
+}
+
+#branding .col-sm-6 {
+	display: table;
+	height: 400px;
+}
+
+.branding-text {
+	vertical-align: middle;
+	display: table-cell;
 }
