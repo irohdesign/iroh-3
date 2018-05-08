@@ -83,7 +83,7 @@ img {
 
 .link-box {
 	text-align: center;
-	padding: 30px 0px 10px 0px;
+	padding: 30px 0px 0px 0px;
 }
 
 .link-box a {
@@ -109,11 +109,18 @@ img {
 	top: 42px;
 }
 
-.drop-content ul {
+.drop-content {
+	padding: 10px;
+	margin-bottom: -30px;
 	display: none;
+}
+
+.drop-content ul {
+	margin-top: 20px;
+	background: #ddd;
 	text-align: center;
 	list-style: none;
-	padding: 0px;
+	padding-top: 10px;
 	justify-content: space-between;
 }
 
@@ -131,10 +138,11 @@ img {
 
 .drop-content a:hover {
 	border-bottom: solid 3px #4A90E2;
+	color: #4A90E2;
 }
 
 #context {
-	margin: 20px auto;
+	margin: 40px auto;
 }
 
 .bracket {

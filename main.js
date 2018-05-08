@@ -1,3 +1,9 @@
+$(document).ready(function(){
+    $("#outlineTrig").click(function(){
+        $(".drop-content").slideToggle("slow");
+    });
+});
+
 var form = document.getElementById('exp-form');
 
 		  form.onsubmit = function(event) {
@@ -59,3 +65,4 @@ var form = document.getElementById('exp-form');
 			document.getElementById('exp-form').reset();
 			
 			};
+			
