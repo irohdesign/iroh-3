@@ -129,28 +129,96 @@
 		            <!-- wrapper for the slides -->
 		            <div class="carousel-inner" role="listbox">
 		                <div class="item active">
-		                    <img src="img/sketch/rpc-home.png">
-		                    
-		                    <div class="sketchComment">
-			                    <h4>High Contrast Logo</h4>
-			                    <p>Branding is front and center. Better legibility if background load is delayed.</p>
-		                    </div>
-		                    
-		                    <div class="sketchComment">
-			                    <h4>Collapsed Menu</h4>
-			                    <p>Smooth scroll animation for better interactions. Simple, clear navigation across the site with no exterior links to slow down website.</p>
-		                    </div>
-		                    
-		                    <div class="sketchComment">
-			                    <h4>Solid Background</h4>
-			                    <p>Faster, more consistent load on mobile devices.</p>
-		                    </div>
-		                </div>
+							<div class="sketch-box">
+								<div class="phone-back">
+									<img src="img/sketch/rpc-home.png">
+								</div>
+							</div>
+			              <div id="sketchContainer">
+				              
+				              <div class="sketchLine" id="contrastLine"></div>
+				                    
+			                    <div class="sketchComment" id="rpc-contrast">
+				                    <h4>High Contrast Logo</h4>
+				                    <p>Branding is front and center. Better legibility if background load is delayed.</p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="collapsedLine"></div>
+			                    
+			                    <div class="sketchComment" id="rpc-collapsed">
+				                    <h4>Collapsed Menu</h4>
+				                    <p>Smooth scroll animation for better interactions. Simple, clear navigation across the site with no exterior links to slow down website.</p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="solidLine"></div>
+	
+			                    <div class="sketchComment" id="rpc-solidBack">
+				                    <h4>Solid Background</h4>
+				                    <p>Faster, more consistent load on mobile devices.</p>
+			                    </div>
+		                 </div><!-- end of sketchContainer -->
+		                </div><!-- end of item -->
+
 		                <div class="item">
-		                    <img src="img/sketch/rpc-menu.png">
-		                </div>
+			                <div class="sketch-box">
+								<div class="phone-back">
+									<img src="img/sketch/rpc-menu.png">
+								</div>
+							</div>
+			              <div id="sketchContainer">
+				              
+				              <div class="sketchLine" id="clearLine"></div>
+				                    
+			                    <div class="sketchComment" id="rpc-clear">
+				                    <h4>Clear Heading</h4>
+				                    <p>The menu is very easy to identify. Eliminating any extra media makes load faster and helps the user see what's important; <strong>the food.</strong></p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="tabLine"></div>
+			                    
+			                    <div class="sketchComment" id="rpc-tab">
+				                    <h4>Tab-Based Menu</h4>
+				                    <p>I built the menu using Bootstrap and jQuery to save valuable screen space. Instead of having to scroll through a long menu, users can focus on what they want and easily browse.</p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="handwriteLine"></div>
+	
+			                    <div class="sketchComment" id="rpc-handwrite">
+				                    <h4>Casual Appearance</h4>
+				                    <p>I chose a handwritten font for the headings to give a more relaxed feel to the menu. The listings are all still clear and easy to read, but also match the attitude of the shop.</p>
+			                    </div>
+		                 </div><!-- end of sketchContainer -->
+		                </div><!-- end of item -->
+
 		                <div class="item">
-		                    <img src="img/sketch/rpc-about.png">
+							<div class="sketch-box">
+								<div class="phone-back">
+									<img src="img/sketch/rpc-about.png">
+								</div>
+							</div>
+			              <div id="sketchContainer">
+				              
+				              <div class="sketchLine" id="addressLine"></div>
+				                    
+			                    <div class="sketchComment" id="rpc-address">
+				                    <h4>Clear Address</h4>
+				                    <p>The address is clear and can be copied and pasted quickly, if the user wants to use an alternative navigation app.</p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="socLine"></div>
+			                    
+			                    <div class="sketchComment" id="rpc-soc">
+				                    <h4>Social Media Links</h4>
+				                    <p>Round Pond Coffee have five star ratings on Facebook and Yelp, so I decided to direct links for users to see the positive reviews quickly.</p>
+			                    </div>
+			                    
+			                    <div class="sketchLine" id="mapLine"></div>
+	
+			                    <div class="sketchComment" id="rpc-map">
+				                    <h4>Interactive Map</h4>
+				                    <p>I embedded their location with GoogleMaps so users can immediately open directions to the store and travel there, accomplishing one of the three <strong>main objectives</strong> of this project.</p>
+			                    </div>
+		                 </div><!-- end of sketchContainer -->
 		                </div>
 		            </div>
 		            <!-- controls -->
@@ -163,6 +231,7 @@
 		                <span class="sr-only">Next</span>
 		            </a> 
 		        </div><!-- end of carousel -->
+		        
 	<div class="container">
 		<h3>Prioritizing User Experience</h3>
 		<p>I used Bootstrap and jQuery to build an interactive menu based on tabs. Users now have access to an entire menu without having to open a separate document or webpage.</p>

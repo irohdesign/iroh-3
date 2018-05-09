@@ -28,6 +28,10 @@ img {
 	max-width: 100%;
 }
 
+strong {
+	color: yellow;
+}
+
 /* NAV */
 
 .navbar {
@@ -236,8 +240,28 @@ img {
 
 #sketchCarousel {
 	background: #12537D;
-	padding-top: 50px;
-	padding-bottom: 0px;
+	height: 800px;
+}
+
+.carousel-control {
+	background: none !important;
+	color: white;
+	opacity: 1;
+}
+
+.carousel-control:hover {
+	color: yellow;
+}
+
+.carousel-indicators .active {
+	background: yellow !important;
+	opacity: 1 !important;
+	border-color: yellow !important;
+	filter: none;
+}
+
+.item {
+	padding: 100px 0px;
 }
 
 #sketchCarousel img {
@@ -260,18 +284,18 @@ img {
 .sketchComment {
 	width: 250px;
 	color: white;
-	background: ;
+	position: relative;
 }
 
 .sketchComment h4 {
 	font-family: Varela Round;
 	font-size: 25px;
+	color: yellow;
 	width: 250px;
-	margin-bottom: -5px;
 }
 
 #sketchContainer {
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: auto;
 }
 
@@ -279,7 +303,7 @@ img {
 	border: dashed 1.5px white;
 	display: inline-block;
 	position: relative;
-	width: 180px;
+	width: 18%;
 	z-index: 2;
 }
  
@@ -343,34 +367,90 @@ img {
 
 #rpc-contrast {
 	position: relative;
-	top: -380px;
+	top: -360px;
 }
 
 #contrastLine {
-	top: -320px;
+	top: -328px;
 	left: 24%;
 }
 
 #rpc-collapsed {
 	position: relative;
-	top: -850px;
+	top: -700px;
 	left: 78%;
 	text-align: right;
 }
 
 #collapsedLine {
-	top: -800px;
-	left: 65%;
+	top: -673px;
+	left: 63%;
 }
 
 #rpc-solidBack {
-	position: relative;
-	top: -500px;
+	top: -480px;
 	left: 78%;
 	text-align: right;
 }
 
 #solidLine {
-	top: -430px;
-	left: 62%;
+	top: -450px;
+	left: 61%;
+}
+
+#clearLine {
+	top: -500px;
+	left: 24%;
+}
+
+#rpc-clear {
+	top: -530px;
+}
+
+#tabLine {
+	top: -615px;
+	left: 63%;
+}
+
+#rpc-tab {
+	top: -645px;
+	left: 80%;
+	text-align: right;
+}
+
+#handwriteLine {
+	top: -520px;
+	left: 24%;
+}
+
+#rpc-handwrite {
+	top: -550px;
+}
+
+#addressLine{
+	top: -400px;
+	left: 22%;
+}
+
+#rpc-address{
+	top: -432px;
+}
+
+#socLine{
+	top: -462px;
+	left: 61%;
+}
+
+#rpc-soc{
+	left: 80%;
+	top: -492px;
+}
+
+#mapLine{
+	top: -480px;
+	left: 22%;
+}
+
+#rpc-map{
+	top: -510px;
 }
