@@ -275,6 +275,31 @@ strong {
 	margin: 20px auto;
 }
 
+#buttonBox {
+	padding: 20px 0px;
+	display: flex;
+	width: 100%;
+	justify-content: space-around;	
+}
+
+.liveButton {
+	padding: 10px 100px;
+	background: black;
+	border: double 3px white;
+	border-radius: 10px;
+	color: white;
+}
+
+.liveButton:hover {
+	background: #D0021B;
+}
+
+.liveButton:active {
+	background: #890918;
+	position: relative;
+	top: 2px;
+}
+
 .seeMore a {
 	color: white;
 	font-family: Din Alternate;
@@ -285,7 +310,6 @@ a .more {
 	display: block;
 	text-align: center;
 	padding: 20px 0px;
-	border: solid 1px transparent;
 }
 
 a.more {
@@ -309,7 +333,13 @@ a.more {
 .seeMore a:hover #work,
 .seeMore a:hover #about {
 	background: white;
-	border: solid 1px black;
+}
+
+#results iframe {
+	display: block;
+	margin: 100px auto 0px;
+	width: 700px;
+	height: 400px;
 }
 
 /* FOOTER STYLES */
