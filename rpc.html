@@ -87,28 +87,31 @@
  </section><!-- end of links -->
 
 	  
-
+<section id="cont-chall">
   <section id="context">
-	  <div class="bracket" id="topBracket"></div>
 	  <div class="context-box container">
 		  <div class="context-text">
+			  <h1>Overview</h1>
+			  
 			  <p>Round Pond Coffee has a devoted following in Coastal Maine. Their Facebook and Yelp pages are overflowing with rave reviews, villagers chat while waiting for a cappuccino (unthinkable in Round Pond less than 5 years ago) and local artists display their work on the walls.</p>
 			  <p>With the store growing more and more each year, the owners were looking to expand their reach and hired me. <strong>I built them a website that would bring in more tourists from neighboring hotspots, show off their menu, and increase their visibility online.</strong></p>
 		  </div>
 	  </div>
-	  
-	  <div class="bracket" id="bottomBracket"></div>
   </section><!-- end of context -->
   
   <section id="challenge">
 	  <div class="container">
+		  <h1>The Challenge</h1>
+		  
 		  <p>The primary challenge in building this website was the region’s lack of cell reception. To say that Round Pond has poor digital infrastructure would be an understatement. In 2014, Maine’s internet speed ranked at <strong>49th in the country.</strong> Most of Maine’s counties top download speeds range between <strong>40-60 percent below the national average.</strong></p>
+		  
+		  <p>Complete pages in Maine take minutes to fully load. I designed the site to be functional as soon as possible, even if the page cannot finish loading.</p>
 		  
 		  <h3>This website needed to be <strong>fast, lightweight, and most importantly; fail gracefully.</strong></h3>
 		  
-		  <p>Complete pages in Maine take minutes to fully load. I designed the site to be functional as soon as possible, even if the page cannot finish loading.</p>
 	  </div><!-- end of container -->
   </section><!-- end of #challenge -->
+</section><!-- cont-call end -->
   
   <section id="design">
 	  
@@ -292,15 +295,17 @@
 
 <p>While testing across all the major browsers, I found an issue. Despite the images appearing on all other major browsers, the photos would not display on Safari.</p>
 
-<h3>Safari Before the Fix</h3>
+
 <img src="img/Instagram-fail.png">
+<h3>Safari Before the Fix</h3>
 
 <p>I looked through Stack Overflow and found other developers with the same issue. Through a combination of the advice on the forum and my own digging, I discovered the issue.</p>
 
 <p>The images failed to load because Instagram’s generated Javascript tags do not include a hypertext transfer protocol (HTTP). This causes links to be unstable across different browsers. By adding the protocol, I fixed the issue for all browsers.</p>
 
-<h3>Safari After the Fix</h3>
+
 <img src="img/Instagram-Success.png">
+<h3>Safari After the Fix</h3>
 		  </div><!-- end of container -->
 	  </article><!-- end of roadblock -->
   </section><!-- end of dev section -->

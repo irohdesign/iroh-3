@@ -7,6 +7,10 @@ HARVARD CRIMSON : #D0021B
 */
 
 /* GLOBAL */
+html, body {
+	height: 100%;
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -35,13 +39,14 @@ strong {
 /* NAV */
 
 .navbar {
-	background: black;
+	background: transparent;
 	border-radius: 0px;
 	height: 50px;
 }
 
 .navbar a {
 	color: white;
+	text-shadow: 3px 3px 0px black ;
 	font-family: Din Alternate;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -62,16 +67,17 @@ strong {
 	padding: 0px 5px;
 }
 
-#top-nav ul li:hover {
-	border-bottom: solid 1px white;
+#top-nav ul li a:hover {
+	border-bottom: solid 1px yellow;
+	color: yellow;
 }
 
 /* PROJECT GLOBAL */
 
 .proj-header-img {
-	height: 500px;
+	height: 90%;
 	background: black;
-	margin-top: -20px;
+	margin-top: -100px;
 	display: table;
 	width: 100%;
 }
@@ -87,7 +93,7 @@ strong {
 
 .link-box {
 	text-align: center;
-	padding: 30px 0px 0px 0px;
+	margin-top: -10px;
 }
 
 .link-box a {
@@ -95,6 +101,7 @@ strong {
 	color: white;
 	padding: 10px 25%;
 	border: double 3px white;
+	border-radius: 15px;
 	font-family: Varela Round;
 	letter-spacing: 1px;
 	font-size: 14px;
@@ -106,25 +113,15 @@ strong {
 	transition: 1s ease;
 }
 
-#link-line {
-	background: black;
-	height: 2px;
-	position: relative;
-	top: 42px;
-}
-
 .drop-content {
-	padding: 10px;
-	margin-bottom: -30px;
+	padding: 10px 0px;
 	display: none;
 }
 
 .drop-content ul {
-	margin-top: 20px;
-	background: #ddd;
 	text-align: center;
 	list-style: none;
-	padding-top: 10px;
+	padding: 18px 0px 10px 0px;
 	justify-content: space-between;
 }
 
@@ -133,11 +130,10 @@ strong {
 	display: inline-block;
 	font-family: Varela Round;
 	text-transform: uppercase;
-	border-bottom: solid 3px transparent;
 }
 
 .drop-content a {
-	color: #777;
+	color: #333;
 }
 
 .drop-content a:hover {
@@ -145,43 +141,43 @@ strong {
 	color: #4A90E2;
 }
 
-#context {
-	margin: 40px auto;
-}
-
-.bracket {
-	background: white;
-	height: 13px;
-	width: 500px;
-	margin: auto;
-	position: relative;
-}
-
-#topBracket {
-	top: 8px;
-}
-
-#bottomBracket {
-	top: -8px;
-}
-
-.context-box {
-	padding: 30px;
-	border: solid 1.5px black;
-	max-width: 650px;
+#cont-chall {
+	margin-top: -10px;
 	text-align: center;
-	font-family: Varela Round;
-	font-size: 16px;
 }
 
-.context-box strong {
-	color: red;
+#cont-chall .container {
+	max-width: 750px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
 }
 
-#design h2,
-#dev h2,
-#results h2 {
+#context {
+	margin-bottom: 60px;
+	padding: 60px 0px;
+	margin-bottom: 0px;
+}
+
+#context strong {
+	color: #4A90E2;
+}
+
+#challenge {
+	background: #222;
+	color: white;
+	padding: 60px 0px;
+	margin-bottom: 0px;
+}
+
+.topic {
+	margin: 50px auto;
+}
+
+#design h1,
+#dev h1,
+#results h1 {
 	margin-top: 50px;
+	margin-bottom: -40px;
 	text-align: center;
 }
 
@@ -189,8 +185,14 @@ strong {
 #dev .container,
 #results .container {
 	max-width: 750px;
+	padding: 50px 20px;
+}
+
+#design .container,
+#dev .container,
+#results .container,
+#branding {
 	margin: auto;
-	padding: 20px;
 	font-size: 18px;
 }
 
@@ -206,30 +208,28 @@ strong {
 }
 
 .head-line {
-	height: 3px;
 	background: black;
 	position: relative;
-	top: -37px;
+	top: 13px;
+	height: 3px;
 	z-index: -1;
 }
 
-#challenge {
-	background: black;
-	color: white;
-	padding: 50px 0px;
-	text-align: center;
-}
-
-#challenge .container {
-	max-width: 750px;
-	font-size: 18px;
-	letter-spacing: 0.5px;
+#cont-chall h1 {
+	font-family: Varela Round;
+	font-size: 34px;
+	margin-bottom: 0px;
+	letter-spacing: 1px;
 }
 
 #challenge h3 {
 	font-family: Varela Round;
-	font-size: 24px;
-	margin: 50px auto;
+	font-size: 22px;
+	margin: 35px auto;
+}
+
+#cont-chall p {
+	margin: 30px auto;
 }
 
 #challenge strong {
@@ -239,25 +239,37 @@ strong {
 #roadblock {
 	background: #12537D;
 	color: white;
-	padding: 30px;
+	padding: 10px auto;
 }
 
 #roadblock h2 {
-	margin: 0px;
 	text-transform: uppercase;
-	letter-spacing: 3px;
-	font-size: 35px;
+	letter-spacing: 4px;
+	margin-bottom: 50px;
+	font-size: 45px;
+	text-align: center;
+	text-shadow: 5px 3px 0px #6282a1;
 }
 
-#roadblock img {
-	display: block;
-	margin: 10px auto;
-	height: 100px;
+#roadblock h3 {
+	font-family: Varela Round;
+	font-size: 18px;
+	color: #ccc;
+	margin-bottom: 40px;
 }
 
 #roadblock .container {
 	line-height: 25px;
-	max-width: 650px;
+	max-width: 750px;
+	text-align: center;
+}
+
+#roadblock img {
+	margin: 30px auto 0px;
+}
+
+#roadblock p {
+	margin: 20px auto;
 }
 
 /* Sketch Sections */
@@ -267,15 +279,30 @@ strong {
 	height: 800px;
 }
 
+#sketchCarousel h3 {
+	color: white;
+	margin: 0px;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: -50px;
+	font-family: Varela Round;
+	font-size: 32px;
+	letter-spacing: 1px;
+}
+
 .carousel-control {
 	background: none !important;
 	color: white;
 	opacity: 1;
-	margin: auto 150px !important;
 }
 
 .carousel-control:hover {
 	color: yellow;
+}
+
+.carousel-indicators li {
+	margin: auto 25px !important;
+	padding: 8px;
 }
 
 .carousel-indicators .active {
@@ -343,20 +370,21 @@ strong {
 	background: black;
 	border-radius: 100%;
 	border: double 8px white;
-	width: 270px;
+	width: 40%;
+	max-width: 320px;
+	padding: 9px;
 	display: block;
 	margin: auto;
 }
 
 #rpc-logo-back img {
-	height: 250px;
 	margin: auto;
 	border-radius: 100%;
 }
 
 #branding {
 	background: black;
-	color: white;
+	color: white;;
 }
 
 #branding .container {
@@ -366,12 +394,18 @@ strong {
 
 #branding .col-sm-6 {
 	display: table;
-	height: 400px;
+	height: 500px;
+}
+
+#branding img {
+	position: relative;
+	top: 48px;
 }
 
 .branding-text {
 	vertical-align: middle;
 	display: table-cell;
+	text-align: left;
 }
 
 #rpc-contrast {
