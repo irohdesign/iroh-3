@@ -232,6 +232,50 @@ img {
 	max-width: 650px;
 }
 
+/* Sketch Sections */
+
+#sketchCarousel {
+	background: #4D7A98;
+	padding: 50px;
+}
+
+.sketch-box {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
+
+.phone-back {
+	padding: 12px;
+	background: white;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.sketchComment {
+	width: 250px;
+	color: white;
+	background: ;
+}
+
+.sketchComment h4 {
+	font-family: Varela Round;
+	font-size: 25px;
+	width: 250px;
+	margin-bottom: -5px;
+}
+
+#sketchContainer {
+	max-width: 1200px;
+	margin: auto;
+}
+
+.sketchLine {
+	border: dashed 1.5px white;
+	display: inline-block;
+	position: relative;
+}
+ 
 /* RPC CUSTOM STYLES */
 #rpc-head {
 	background: url('img/waves.jpeg');
@@ -288,4 +332,16 @@ img {
 .branding-text {
 	vertical-align: middle;
 	display: table-cell;
+}
+
+#rpc-contrast {
+	position: relative;
+	top: -400px;
+}
+
+#contrastLine {
+	top: -320px;
+	left: 250px;
+	width: 180px;
+	z-index: 2;
 }
