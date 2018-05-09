@@ -188,9 +188,10 @@ strong {
 #design .container,
 #dev .container,
 #results .container {
-	max-width: 800px;
+	max-width: 750px;
 	margin: auto;
 	padding: 20px;
+	font-size: 18px;
 }
 
 .head-box {
@@ -210,6 +211,29 @@ strong {
 	position: relative;
 	top: -37px;
 	z-index: -1;
+}
+
+#challenge {
+	background: black;
+	color: white;
+	padding: 50px 0px;
+	text-align: center;
+}
+
+#challenge .container {
+	max-width: 750px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+}
+
+#challenge h3 {
+	font-family: Varela Round;
+	font-size: 24px;
+	margin: 50px auto;
+}
+
+#challenge strong {
+	color: yellow;
 }
 
 #roadblock {
@@ -247,6 +271,7 @@ strong {
 	background: none !important;
 	color: white;
 	opacity: 1;
+	margin: auto 150px !important;
 }
 
 .carousel-control:hover {
@@ -327,22 +352,6 @@ strong {
 	height: 250px;
 	margin: auto;
 	border-radius: 100%;
-}
-
-#challenge {
-	background: black;
-	color: white;
-	padding: 50px 0px;
-	text-align: center;
-}
-
-#challenge .container {
-	max-width: 800px;
-	font-size: 16px;
-}
-
-#challenge strong {
-	color: yellow;
 }
 
 #branding {

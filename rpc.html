@@ -111,15 +111,11 @@
   </section><!-- end of #challenge -->
   
   <section id="design">
-	  <h2><div class="head-box">Design Process</div></h2>
-	  <div class="head-line"></div>
-	  
-	  <div class="container">
-		  <h3>Mobile-First Approach</h3>
-		  <p>Tourists primarily search for food using their phones. I prioritized the mobile user experience so that customers would be able to find the store while visiting nearby attractions.</p>
-	  </div>
 	  
 			  <div id="sketchCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+				  
+				  <h3>Mobile Sketches</h3>
+				  
 		            <!-- indicators -->
 		            <ol class="carousel-indicators">
 		                <li data-target="#sketchCarousel" data-slide-to="0" class="active"></li>
@@ -231,12 +227,23 @@
 		                <span class="sr-only">Next</span>
 		            </a> 
 		        </div><!-- end of carousel -->
-		        
-	<div class="container">
-		<h3>Prioritizing User Experience</h3>
+ <h1><div class="head-box">Design Process</div></h1>
+	  <div class="head-line"></div>   
+
+<div class="container">
+	
+	
+		  <div class="topic">
+			  <h3>Mobile-First Approach</h3>
+		  <p>Tourists primarily search for food using their phones. I prioritized the mobile user experience so that customers would be able to find the store while visiting nearby attractions.</p>
+		  </div><!-- topic end -->
+
+		<div class="topic">
+			<h3>Prioritizing User Experience</h3>
 		<p>I used Bootstrap and jQuery to build an interactive menu based on tabs. Users now have access to an entire menu without having to open a separate document or webpage.</p>
 
 <p>The menu's tabs save valuable screen real estate and minimize unnecessary scrolling. The smooth scroll improves user experience and reinforces the availability to the rest of the page.</p>
+		</div><!-- topic end -->
 	</div>
 	
   </section><!-- end of design section -->
@@ -259,37 +266,47 @@
 	</section><!-- end of branding -->
   
   <section id="dev">
-	  <h2><div class="head-box">Development</div></h2>
+	  <h1><div class="head-box">Development</div></h1>
 	  <div class="head-line"></div>
 	  
 	  
 	  <div class="container">
-		  <h3>Balancing Speed &amp; Performance</h3>
+		  <div class="topic">
+			  <h3>Balancing Speed &amp; Performance</h3>
 			  <p>I trimmed down the code and files to keep the website as fast as possible. I used Bootstrap’s framework because the built-in styles and scripts kept the code from getting too dense.</p>
 		
 		<p>I placed the Javascript and jQuery tags at the bottom of the HTML so the structure and appearance are prioritized. Users can get what they need to find the store, even if the page fails.</p>
 		
 		<p>I used Google’s development tool, PageSpeed, to better understand where the weight of my website was focused. I deleted all landing page redirects, then minified the CSS, HTML and Javascript files. I optimized the images using Adobe Photoshop’s web exporting tools. I prioritized visible content and emphasized legibility to ensure a fast, functional experience for my users.</p>
-	  </div>
+
+		  </div><!-- end of topic -->
+	  </div><!-- container end -->
 	  
 	  <article id="roadblock">
 		  <div class="container">
-		  <h2>Roadblock</h2>
-		  <img src="img/roadblock.svg">
+		 
 		  
-		  <p>I chose to embed Instagram posts geotagged to the store to show off their existing digial presence and give a personal touch to the website.</p>
+		   <h2>Roadblock</h2>
+		  
+		  <p>I chose to embed Instagram posts geotagged to the store to show off their existing digital presence and give the website a personal touch.</p>
 
 <p>While testing across all the major browsers, I found an issue. Despite the images appearing on all other major browsers, the photos would not display on Safari.</p>
+
+<h3>Safari Before the Fix</h3>
+<img src="img/Instagram-fail.png">
 
 <p>I looked through Stack Overflow and found other developers with the same issue. Through a combination of the advice on the forum and my own digging, I discovered the issue.</p>
 
 <p>The images failed to load because Instagram’s generated Javascript tags do not include a hypertext transfer protocol (HTTP). This causes links to be unstable across different browsers. By adding the protocol, I fixed the issue for all browsers.</p>
+
+<h3>Safari After the Fix</h3>
+<img src="img/Instagram-Success.png">
 		  </div><!-- end of container -->
 	  </article><!-- end of roadblock -->
   </section><!-- end of dev section -->
   
   <section id="results">
-	  <h2><div class="head-box">Results</div></h2>
+	  <h1><div class="head-box">Results</div></h1>
 	  <div class="head-line"></div>
 	  
 	  <div class="container">
