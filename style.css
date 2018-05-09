@@ -39,7 +39,7 @@ strong {
 /* NAV */
 
 .navbar {
-	background: transparent;
+	background: black;
 	border-radius: 0px;
 	height: 50px;
 }
@@ -87,21 +87,20 @@ strong {
 	vertical-align: middle;
 }
 
-.links-block {
-	max-width: 1000px;
+#links {
+	background: black;
 }
 
-.link-box {
-	text-align: center;
-	margin-top: -10px;
+.links-block {
+	padding: 10px;
+	max-width: 900px;
 }
 
 .link-box a {
 	background: black;
 	color: white;
-	padding: 10px 25%;
-	border: double 3px white;
-	border-radius: 15px;
+	display: flex;
+	justify-content: space-around;
 	font-family: Varela Round;
 	letter-spacing: 1px;
 	font-size: 14px;
@@ -114,14 +113,16 @@ strong {
 }
 
 .drop-content {
-	padding: 10px 0px;
+	padding: 5px 0px;
 	display: none;
+	background: white;
+	border-bottom: solid 1px black;
 }
 
 .drop-content ul {
 	text-align: center;
 	list-style: none;
-	padding: 18px 0px 10px 0px;
+	padding-top: 15px;
 	justify-content: space-between;
 }
 
@@ -137,8 +138,8 @@ strong {
 }
 
 .drop-content a:hover {
-	border-bottom: solid 3px #4A90E2;
-	color: #4A90E2;
+	border-bottom: solid 3px #931c1c;
+	color: #931c1c;
 }
 
 #cont-chall {
@@ -147,8 +148,8 @@ strong {
 }
 
 #cont-chall .container {
-	max-width: 750px;
-	font-size: 18px;
+	max-width: 850px;
+	font-size: 16px;
 	letter-spacing: 0.5px;
 }
 
@@ -176,7 +177,7 @@ strong {
 #design h1,
 #dev h1,
 #results h1 {
-	margin-top: 50px;
+	margin-top: 80px;
 	margin-bottom: -40px;
 	text-align: center;
 }
@@ -216,15 +217,16 @@ strong {
 }
 
 #cont-chall h1 {
-	font-family: Varela Round;
-	font-size: 34px;
+	font-family: Din Alternate;
+	text-transform: uppercase;
+	font-size: 40px;
 	margin-bottom: 0px;
-	letter-spacing: 1px;
+	letter-spacing: 1.5px;
 }
 
 #challenge h3 {
 	font-family: Varela Round;
-	font-size: 22px;
+	font-size: 26px;
 	margin: 35px auto;
 }
 
@@ -253,7 +255,8 @@ strong {
 
 #roadblock h3 {
 	font-family: Varela Round;
-	font-size: 18px;
+	font-size: 14px;
+	letter-spacing: 1px;
 	color: #ccc;
 	margin-bottom: 40px;
 }
@@ -270,6 +273,59 @@ strong {
 
 #roadblock p {
 	margin: 20px auto;
+}
+
+.seeMore a {
+	color: white;
+	font-family: Din Alternate;
+	text-transform: uppercase;
+}
+
+a .more {
+	display: block;
+	text-align: center;
+	padding: 20px 0px;
+	border: solid 1px transparent;
+}
+
+a.more {
+	font-size: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.seeMore #work {
+	background: #0C3C5A;
+}
+
+.seeMore #about {
+	background: #093049;
+}
+
+.seeMore a:hover {
+	color: black;
+}
+
+.seeMore a:hover #work,
+.seeMore a:hover #about {
+	background: white;
+	border: solid 1px black;
+}
+
+/* FOOTER STYLES */
+
+footer {
+	background: black;
+	text-align: center;
+	color: white;
+	padding: 2.5px;
+	font-family: Din Alternate;
+}
+
+footer h3 a {
+	color: white;
+	font-family: Din Alternate;
+	text-transform: uppercase;
 }
 
 /* Sketch Sections */
@@ -306,9 +362,9 @@ strong {
 }
 
 .carousel-indicators .active {
-	background: yellow !important;
+	background: white !important;
 	opacity: 1 !important;
-	border-color: yellow !important;
+	border-color: white !important;
 	filter: none;
 }
 
@@ -363,7 +419,7 @@ strong {
 #rpc-head {
 	background: url('img/waves.jpeg');
 	background-size: cover;
-	background-position: center;
+	background-attachment: fixed;
 }
 
 #rpc-logo-back {
@@ -388,7 +444,7 @@ strong {
 }
 
 #branding .container {
-	max-width: 1000px; 
+	max-width: 1150px; 
 	margin: auto;
 }
 
