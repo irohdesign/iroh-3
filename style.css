@@ -235,8 +235,13 @@ img {
 /* Sketch Sections */
 
 #sketchCarousel {
-	background: #4D7A98;
-	padding: 50px;
+	background: #12537D;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#sketchCarousel img {
+	width: 300px;
 }
 
 .sketch-box {
@@ -274,6 +279,8 @@ img {
 	border: dashed 1.5px white;
 	display: inline-block;
 	position: relative;
+	width: 180px;
+	z-index: 2;
 }
  
 /* RPC CUSTOM STYLES */
@@ -336,12 +343,34 @@ img {
 
 #rpc-contrast {
 	position: relative;
-	top: -400px;
+	top: -380px;
 }
 
 #contrastLine {
 	top: -320px;
-	left: 250px;
-	width: 180px;
-	z-index: 2;
+	left: 24%;
+}
+
+#rpc-collapsed {
+	position: relative;
+	top: -850px;
+	left: 78%;
+	text-align: right;
+}
+
+#collapsedLine {
+	top: -800px;
+	left: 65%;
+}
+
+#rpc-solidBack {
+	position: relative;
+	top: -500px;
+	left: 78%;
+	text-align: right;
+}
+
+#solidLine {
+	top: -430px;
+	left: 62%;
 }
