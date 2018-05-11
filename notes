@@ -16,3 +16,6 @@ dropdown menu for genres
 animate the guitar when people press enter? add class toggle - animate the border radius of the circle, but not of the actual dark color, make it so it's a clear line across
 
 explain how i didn't use a reset button, just programmed in the javascript so that endless results don't stack up
+
+FAVORITE TECHNIQUES:
+- love flexbox. it's great for responsive design, because you can shift the flex direction's axis with only one line of code. light css, but gets the job done. just have to be careful with outdated browsers, but it's worth it for how much it lightens the css
