@@ -371,9 +371,9 @@ nav span {
 	margin-top: 25px;
 }
 
-.seeMore a:hover #work,
-.seeMore a:hover #about {
+#seeMore .container a:hover {
 	background: white;
+	color: black;
 }
 
 /* FOOTER STYLES */
@@ -493,6 +493,7 @@ footer h3 a {
 	border-radius: 100%;
 	border: double 8px white;
 	width: 40%;
+	min-width: 280px;
 	max-width: 320px;
 	padding: 9px;
 	display: block;
@@ -512,16 +513,19 @@ footer h3 a {
 #branding .container {
 	max-width: 1150px; 
 	margin: auto;
+	padding: 10px;
 }
 
-#branding .col-sm-6 {
+#branding .col-md-6 {
 	display: table;
 	height: 500px;
 }
 
 #branding img {
+	margin: auto;
+	display: table-cell;
 	position: relative;
-	top: 48px;
+	top: 40px;
 }
 
 .branding-text {
@@ -621,7 +625,7 @@ footer h3 a {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
 .navbar {
 	font-size: 30px;
@@ -694,21 +698,22 @@ footer h3 a {
 	min-width: 250px;
 }
 
-#branding .col-sm-6 {
+#branding {
+	padding: 10px 10px 40px;
+}
+
+#branding .col-md-6 {
 	display: table;
-	height: 350px;
-	margin-bottom: 20px;
+	height: 300px;
 }
 
 #branding img {
 	border: solid 3px white;
 	border-radius: 100%;
 	display: block;
-	width: 88%;
-	margin: auto;
+	max-width: 350px;
+	margin-bottom: 20px;
 }
-
-
 
 .logo {
 	width: 65%;
@@ -746,4 +751,17 @@ footer h3 a {
 	height: auto;
 }
 
+}
+
+@media only screen and (max-width: 767px) {
+
+.proj-header-img {
+	height: 95%;
+}
+
+#branding img {
+	max-width: 260px;
+	margin-bottom: 80px;
+}
+	
 }
