@@ -12,6 +12,7 @@ html, body {
 }
 
 a:hover {
+	cursor: pointer;
 	text-decoration: none;
 }
 
@@ -38,10 +39,15 @@ strong {
 
 /* NAV */
 
+nav span {
+	color: white;
+	font-size: 20px;
+}
+
 .navbar {
 	background: black;
 	border-radius: 0px;
-	height: 50px;
+	margin-bottom: -30px;
 }
 
 .navbar a {
@@ -51,6 +57,25 @@ strong {
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 1px;
+}
+
+.underlineAnim {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+}
+
+.underlineAnim::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: width .3s;
+}
+
+.underlineAnim:hover::after {
+	width: 100%;
 }
 
 #top-nav ul {
@@ -67,17 +92,11 @@ strong {
 	padding: 0px 5px;
 }
 
-#top-nav ul li a:hover {
-	border-bottom: solid 1px yellow;
-	color: yellow;
-}
-
 /* PROJECT GLOBAL */
 
 .proj-header-img {
-	height: 90%;
+	height: 80%;
 	background: black;
-	margin-top: -100px;
 	display: table;
 	width: 100%;
 }
@@ -122,8 +141,11 @@ strong {
 .drop-content ul {
 	text-align: center;
 	list-style: none;
-	padding-top: 15px;
-	justify-content: space-between;
+	padding: 15px 5% 0px 5%;
+	display: flex;
+	max-width: 900px;
+	margin: auto;
+	justify-content: space-around;
 }
 
 .drop-content ul li {
@@ -147,7 +169,10 @@ strong {
 	text-align: center;
 }
 
-#cont-chall .container {
+#cont-chall .container,
+#design .container,
+#dev .container,
+#results .container {
 	max-width: 850px;
 	font-size: 16px;
 	letter-spacing: 0.5px;
@@ -160,7 +185,7 @@ strong {
 }
 
 #context strong {
-	color: #4A90E2;
+	color: #D0021B;
 }
 
 #challenge {
@@ -168,6 +193,11 @@ strong {
 	color: white;
 	padding: 60px 0px;
 	margin-bottom: 0px;
+}
+
+#challenge a {
+	color: yellow;
+	text-decoration: underline;
 }
 
 .topic {
@@ -184,9 +214,13 @@ strong {
 
 #design .container,
 #dev .container,
-#results .container {
-	max-width: 750px;
+#results .container{
 	padding: 50px 20px;
+}
+
+#design p,
+#dev p {
+	margin: 25px auto;
 }
 
 #design .container,
@@ -194,7 +228,7 @@ strong {
 #results .container,
 #branding {
 	margin: auto;
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .head-box {
@@ -282,6 +316,22 @@ strong {
 	justify-content: space-around;	
 }
 
+#results .container {
+	margin-top: 30px;
+}
+
+#results p {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+#results .scroll {
+	display: block;
+	color: #999;
+	text-align: center;
+	margin-top: 45px;
+}
+
 .liveButton {
 	padding: 10px 100px;
 	background: black;
@@ -300,46 +350,30 @@ strong {
 	top: 2px;
 }
 
-.seeMore a {
+#seeMore {
+	background: black;
+	width: 100%;
+	height: 80px;
+}
+
+#seeMore .container {
+	display: flex;
+	justify-content: space-around;	
+}
+
+#seeMore .container a {
 	color: white;
-	font-family: Din Alternate;
+	border: solid 1px white;
+	padding: 10px 40px;
 	text-transform: uppercase;
-}
-
-a .more {
-	display: block;
-	text-align: center;
-	padding: 20px 0px;
-}
-
-a.more {
+	font-family: Din Alternate;
 	font-size: 25px;
-	margin: 0px;
-	padding: 0px;
-}
-
-.seeMore #work {
-	background: #0C3C5A;
-}
-
-.seeMore #about {
-	background: #093049;
-}
-
-.seeMore a:hover {
-	color: black;
+	margin-top: 25px;
 }
 
 .seeMore a:hover #work,
 .seeMore a:hover #about {
 	background: white;
-}
-
-#results iframe {
-	display: block;
-	margin: 100px auto 0px;
-	width: 700px;
-	height: 400px;
 }
 
 /* FOOTER STYLES */
@@ -356,6 +390,7 @@ footer h3 a {
 	color: white;
 	font-family: Din Alternate;
 	text-transform: uppercase;
+	font-size: 20px;
 }
 
 /* Sketch Sections */
@@ -363,6 +398,7 @@ footer h3 a {
 #sketchCarousel {
 	background: #12537D;
 	height: 800px;
+	width: 100%;
 }
 
 #sketchCarousel h3 {
@@ -582,4 +618,132 @@ footer h3 a {
 
 #rpc-map{
 	top: -510px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px) {
+
+.navbar {
+	font-size: 30px;
+}
+
+.navbar button:hover {
+	transition: 2s ease;
+}
+
+.navbar button:active {
+	transform: rotate(360deg);
+	transition: 2s ease;
+}
+
+.navbar-brand {
+	text-decoration: underline;
+	font-size: 40px !important;
+	position: relative;
+	top: 13px;
+}
+
+#top-nav {
+	background: black;
+	position: absolute;
+	right: 0px;
+}
+
+#top-nav ul {
+	flex-direction: column;
+	padding: none;
+	margin: none;
+	text-align: right;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+#rpc-contrast,
+#rpc-collapsed,
+#rpc-solidBack, 
+#rpc-clear,
+#rpc-handwrite,
+#rpc-address,
+#rpc-soc,
+#rpc-map,
+#rpc-tab {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 55%;
+	min-width: 200px;
+	text-align: left;
+	margin: 50px auto 0px;
+}
+
+.sketchComment h4 {
+	font-size: 20px;
+	margin-bottom: -10px;
+}
+
+#sketchCarousel {
+	height: auto;
+}
+
+#sketchCarousel img {
+	width: 100%;
+}
+
+.phone-back {
+	width: 35%;
+	min-width: 250px;
+}
+
+#branding .col-sm-6 {
+	display: table;
+	height: 350px;
+	margin-bottom: 20px;
+}
+
+#branding img {
+	border: solid 3px white;
+	border-radius: 100%;
+	display: block;
+	width: 88%;
+	margin: auto;
+}
+
+
+
+.logo {
+	width: 65%;
+}
+
+#design .container,
+#dev .container,
+#results .container,
+#branding,
+#cont-chall .container ,
+#results .container p {
+	margin: auto;
+	font-size: 16px;
+	line-height: 27px;
+}
+
+#results .container p {
+	margin-top: 35px;
+}
+
+#cont-chall h3 {
+	font-size: 24px;
+}
+
+.drop-content ul {
+	flex-direction: column;
+}
+
+#seeMore .container {
+	flex-direction: column;
+	text-align: center;
+}
+
+#seeMore {
+	height: auto;
+}
+
 }
