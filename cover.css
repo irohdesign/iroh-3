@@ -1,0 +1,10 @@
+html, body {
+	height: 100%;
+	background: #12537D;
+}
+
+#bisect {
+	width: 100%;
+	height: 4px;
+	background: white;
+}
