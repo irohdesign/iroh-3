@@ -82,7 +82,6 @@ html, body {
 	left: 0px;
 	animation: medSlide 4s;
 	animation-delay: 2s;
-	animation-iteration-count: infinite forwards;
 }
 
 .medCirc {
@@ -98,13 +97,14 @@ html, body {
 
 .largeLine {
 	height: 2px;
-	width: 40%;
+	width: 35%;
 	max-width: 580px;
 	background: white;
 	position: absolute;
 	left: 0px;
-	animation: largeSlide 4s;
-	animation-iteration-count: infinite forwards;
+	animation: largeSlide 3s;
+	animation-direction: forwards;
+	animation-iteration-count: infinite;
 }
 
 .largeCirc {
@@ -113,7 +113,7 @@ html, body {
 	background: #12537D;
 	position: absolute;
 	top: -33px;
-	right: 0px;
+	right: -30px;
 	border: solid 2px white;
 	border-radius: 100%;	
 }
@@ -134,8 +134,8 @@ html, body {
 
 #large-1 {
 	top: 50px;
+	animation-delay: 1s;
 }
-
 
 #short-2 {
 	top: 90px;
@@ -188,6 +188,10 @@ html, body {
 		width: 0px;
 	}
 	
+	75% {
+		width: 15.5%;
+	}
+	
 	100% {
 		width: 15%%;
 	}
@@ -196,6 +200,10 @@ html, body {
 @keyframes medSlide {
 	0% {
 		width: 0px;
+	}
+	
+	75% {
+		width: 25.5%;
 	}
 	
 	100% {
@@ -208,7 +216,25 @@ html, body {
 		width: 0px;
 	}
 	
+	75% {
+		width: 40.5%;
+	}
+	
 	100% {
 		40%;
+	}
+}
+
+@keyframes bubble {
+	0% {
+		transform: scale(0);
+	}
+	
+	75% {
+		transform: scale(1.1);
+	}
+	
+	100% {
+		transform: scale(1);
 	}
 }
