@@ -413,12 +413,13 @@ html, body {
 	max-width: 1000px;
 }
 
-#indexLinks button {
+#indexLinks a {
 	display: block;
 	margin: auto;
 	padding: 10px 30px;
-	border: solid 1px white;
+	border: none;
 	background: black;
+	position: relative;
 }
 
 #indexLinks a {
@@ -429,3 +430,25 @@ html, body {
 	letter-spacing: 1px;
 	color: white;
 }
+
+a span {
+	display: block;
+	background: white;
+	transition: .2s;
+}
+
+a span:nth-child(1),
+a span:nth-child(3) {
+	position: absolute;
+	height: 2px;
+	width: 100%;
+}
+
+a span:nth-child(2),
+a span:nth-child(4) {
+	position: absolute;
+	width: 2px;
+	height: 100%;
+}
+
+a span:nth-child(1)
