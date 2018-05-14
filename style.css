@@ -46,6 +46,7 @@ nav span {
 
 .navbar {
 	background: black;
+	z-index: 3;
 	border-radius: 0px;
 	margin-bottom: -30px;
 }
