@@ -94,7 +94,7 @@ html, body {
 	position: absolute;
 	animation: medSlide forwards 1s;
 	animation-iteration-count: 1;
-	animation-delay: 2s;
+	animation-delay: 2.3s;
 
 }
 
@@ -356,23 +356,76 @@ html, body {
 }
 
 .diamond {
-	height: 10px;
-	width: 10px;
 	border: solid 1px white;
 	position: absolute;
-	left: 100px;
-	top: -4.5px;
 	transform: rotate(45deg);
 }
 
-#first {
+.mini,
+.mini2 {
+	height: 10px;
+	width: 10px;
+	left: 100px;
+	top: -4.5px;
+}
+
+.mini2 {
+	left: 180px;
+}
+
+.large {
+	height: 20px;
+	width: 20px;
+	border: 1px solid white;
+	right: -22px;
+	top: -9px;
+}
+
+#first,
+#first .diamond {
 	background: #164869;
 }
 
-#second {
+#second,
+#second .diamond {
 	background: #0C3C5A;
 }
 
-#third {
+#second .boxLine {
+	position: absolute;
+	right: 0px;
+	transform: rotate(180deg);
+}
+
+#third,
+#third .diamond {
 	background: #093049;
+}
+
+/* indexLinks */
+
+#indexLinks {
+	background: black;
+	padding: 50px 0px;
+}
+
+#indexLinks .container {
+	max-width: 1000px;
+}
+
+#indexLinks button {
+	display: block;
+	margin: auto;
+	padding: 10px 30px;
+	border: solid 1px white;
+	background: black;
+}
+
+#indexLinks a {
+	text-align: center;
+	font-family: Din Alternate;
+	font-size: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: white;
 }
