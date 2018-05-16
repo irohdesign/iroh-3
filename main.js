@@ -80,3 +80,6 @@ var form = document.getElementById('exp-form');
 			
 			};
 			
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
