@@ -58,6 +58,7 @@ h2 {
 	border: solid 2px white;
 	border-radius: 10px;
 	padding: 80px 0px;
+	position: relative;
 }
 
 input[type="number"] {
@@ -127,4 +128,13 @@ input {
 	top: 12px;
 	margin: auto;
 	transform: rotate(-44deg);
+}
+
+a#reload {
+	position: absolute;
+	bottom: 15px;
+	opacity: 0.6;
+	left: 0px;
+	text-align: center;
+	width: 100%;
 }
