@@ -1,6 +1,4 @@
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+
 
 $(document).ready(function(){
     $("#outlineTrig").click(function(){
@@ -20,4 +18,8 @@ $(document).ready(function(){
 			});
 		}
 	});
+});
+
+$(window).load(function() {
+  $("body").removeClass("preload");
 });

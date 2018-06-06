@@ -625,166 +625,222 @@ footer h3 a {
 	top: -510px;
 }
 
-/* ABOUT PAGE */
+/* ABOUT PAGE-TOP */
 
-#about-top, #about-bells {
-	border-bottom: solid 40px black;
-}
-
-#headshot {
+#photo-circ {
+	height: 300px;
+	width: 300px;
 	background: url('img/retro-jalia.jpg');
 	background-size: cover;
-	height: 300px;
-	margin: 25px auto;
-	max-width: 250px;
+	border-radius: 100%;
 }
 
-#wrap {
-	max-width: 250px;
+#outer-circ {
+	padding: 8px;
+	border: solid 2px black;
+	display: block;
+	width: 320px;
+	border-radius: 100%;
 	margin: auto;
 }
 
-#about-top .row .col-md-3 {
-	height: 550px;
-	color: white;
+#vertical-line {
+	width: 3px;
+	height: 130px;
+	background: black;
+	position: relative;
+	display: block;
+	margin: auto;
 }
 
-#about-top h1, h2, h3, h4, h5, h6 {
-	text-transform: uppercase;
-	font-family: Din Alternate;
-}
-
-#first {
-	background: white;
-	color: black !important;
-}
-
-#second {
-	background: #12537D;
-	padding-top: 40px;
-}
-
-#third {
-	background: #164869;
-}
-
-#fourth {
-	background: #093049;
-	text-align: right;
-	display: table;
-}
-
-#fourth #bottom {
-	display: table-cell;
-	vertical-align: bottom;
-	padding-bottom: 40px;
-}
-
-.about-line {
-	height: 3px;
+#drop-circles {
 	position: absolute;
-	background: white;
-	width: 27%;
-	z-index: 3;
+	width: 100%;
+	height: 350px;
+	top: 50px;
 }
 
-#about-top #left {
-	top: 500px;
+.drop-line {
+	position: absolute;
+	width: 3px;
+	background: black;
+}
+
+#drop-line-1 {
+	height: 260px;
+	left: 8%;
+}
+
+.drop-lg {
+	height: 30px;
+	width: 30px;
+	border: solid 2px black;
+	position: absolute;
+	bottom: 0px;
+	left: -14px;
+	background: white;
+	border-radius: 100%;
+}
+
+#drop-line-2 {
+	height: 140px;
+	left: 14%;
+}
+
+.drop-sm {
+	height: 15px;
+	width: 15px;
+	border: solid 2px black;
+	position: absolute;
+	bottom: 0px;
+	left: -6px;
+	border-radius: 100%;
+	background: white;
+}
+
+#drop-line-3 {
+	height: 190px;
+	left: 20%;
+}
+
+#drop-line-4 {
+	height: 125px;
 	left: 25%;
 }
 
-#about-top #right {
-	right: 0px;
-	top: 100px;
-}
-
-
-/* bells illustration */
-
-#diag-box {
-	height: 150px;
-	width: 150px;
-	position: relative;
-	top: 50px;
-	left: 30px;
-	transform: rotate(45deg);
-	background: black;
-}
-
-#box-bisect {
-	height: 5px;
-	background: white;
-	position: relative;
-	top: 100px;
-}
-
-.box-line {
-	height: 3px;
-	width: 60px;
-	background: white;
-	position: relative;
-}
-
-.smallCirc {
-	height: 30px;
-	width: 30px;
-	border-radius: 100%;
-	border: solid 2px white;
-	position: absolute;
-	right: 0px;
-	top: -13px;
-	background: black;
-}
-
-.medCirc {
+.drop-md {
 	height: 20px;
 	width: 20px;
+	border: solid 2px black;
+	position: absolute;
+	bottom: 0px;
+	background: white;
+	left: -8px;
 	border-radius: 100%;
-	border: solid 2px white;
+}
+
+#drop-line-5 {
+	height: 80px;
+	left: 30%;
+}
+
+
+#drop-line-6 {
+	height: 80px;
+	left: 70%;
+}
+
+
+#drop-line-7 {
+	height: 125px;
+	left: 75%;
+}
+
+#drop-line-8 {
+	height: 190px;
+	left: 80%;
+}
+
+#drop-line-9 {
+	height: 140px;
+	left: 85%;
+}
+
+#drop-line-0 {
+	height: 260px;
+	left: 91%;
+}
+
+#drop-line-left-1, #drop-line-right-1 {
+	height: 145px;
 	position: absolute;
-	right: 0px;
-	background: black;
-	top: -10px;
 }
 
-#diag-1 {
-	top: 60px;
+#drop-line-left-1 {
+	left: 35%;
 }
 
-#diag-2 {
-	top: 20px;
+#drop-line-right-1 {
+	left: 65%;
 }
 
-.diag-ln {
-	height: 4px;
-	width: 520px;
-	transform-origin: left;
-	background: black;
-	transform: rotate(-45deg);
+#drop-line-left, #drop-line-right {
+	height: 35px;
 	position: absolute;
-	top: 300px;
-	left: 0px;
-	z-index: -2;
 }
 
-#line1 {
-	left: -115px;
+#drop-line-left {
+	left: 40%;
 }
 
-#line2 {
-	left: -85px;
+#drop-line-right {
+	left: 60%;
 }
 
-#line3 {
-	left: -55px;
+#about-photo {
+	text-align: center;
+	text-transform: uppercase;
 }
 
-#line4 {
-	left: -25px;
+#about-photo h2 {
+	font-family: Rubik;
+	margin: 50px auto 40px;
+	font-size: 40px;
+	letter-spacing: 2px;
 }
 
-#line5 {
-	left: 0px;
+#about-photo h4 {
+	font-family: Din Alternate, sans-serif;
+}
+
+#about-photo a {
+	text-transform: capitalize;
+	color: black;
+	margin-top: 30px;
+	border: solid 2px black;
+	display: inline-block;
+	padding: 5px 50px;
+}
+
+#about-photo a:hover {
+	background: black;
+	color: white;
+}
+
+/* Q&A */
+
+#q-and-a {
+	border-top: double 10px #12537D;
+	width: 100%;
+	margin-top: 100px;
+	margin-bottom: 90px;
+}
+
+#q-and-a h1 {
+	text-align: center;
+	color: #12537D;
+	font-family: Rubik;
+	text-transform: uppercase;
+}
+
+#headerbox{
+	background: white;
+	display: inline-block;
+	position: relative;
+	top: -45px;
+	padding: 0px 20px;
+}
+
+#q-and-a h3 {
+	text-transform: uppercase;
+	font-family: Rubik;
+	font-weight: 400;
+}
+
+#questions-answers {
+	max-width: 750px;
+	margin: auto;
+	padding: 0px 15px;
 }
 
 /* MEDIA QUERIES */
