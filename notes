@@ -19,3 +19,5 @@ explain how i didn't use a reset button, just programmed in the javascript so th
 
 FAVORITE TECHNIQUES:
 - love flexbox. it's great for responsive design, because you can shift the flex direction's axis with only one line of code. light css, but gets the job done. just have to be careful with outdated browsers, but it's worth it for how much it lightens the css
+
+fit rotate issue on menu

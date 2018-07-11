@@ -22,11 +22,12 @@ a:hover {
 }
 
 * { 
-	font-family: Varela Round;
+	font-family: lato, helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Din Alternate;
+	font-family: Oswald;
+	text-transform: uppercase;
 }
 
 img {
@@ -37,7 +38,7 @@ strong {
 	color: yellow;
 }
 
-/* NAV */
+/*************************** Navigation ***************************/
 
 nav span {
 	color: white;
@@ -93,7 +94,377 @@ nav span {
 	padding: 0px 5px;
 }
 
-/* PROJECT GLOBAL */
+/*************************** See More ***************************/
+
+#seeMore {
+	background: #164869;
+	padding: 40px 0px;
+	text-align: center;
+}
+
+#seeMore a {
+	color: white;
+	padding: 10px 7%;
+	font-size: 45px;
+	text-transform: uppercase;
+	font-family: Din Alternate;
+}
+
+/*************************** Minke CS Specific ************************/
+
+#minke-main-img {
+	background: url('img/desk-turn.jpeg');
+	background-size: cover;
+	color: white;
+	background-attachment: fixed;
+}
+
+#minke-main-img h1 {
+	font-size: 100px;
+	text-shadow: 3px 5px rgba(0,0,0,0.6);
+	letter-spacing: 5px;
+}
+
+#minke-main-img h3 {
+	text-shadow: 2px 2px rgba(0,0,0,0.6);
+	font-size: 30px;
+}
+
+#prereq {
+	text-align: center;
+	margin-top: 35px;
+	position: relative;
+}
+
+#prereq h2 {
+	background: white;
+	width: 40px;
+	margin: 15px auto;
+}
+
+#prereq #line {
+	border: solid 0.5px black;
+	position: absolute;
+	width: 100%;
+	top: 68px;
+}
+
+#issue {
+	background: #12537D;
+	padding: 50px 8%;
+}
+
+#issue h2 {
+	text-align: center;
+	color: white;
+	margin-bottom: 30px;
+	text-shadow: 2px 2px 4px #4A90E2;
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+
+#issue p {
+	max-width: 800px;
+	margin: 15px auto;
+	font-size: 16px;
+	line-height: 25px;
+	color: white;
+}
+
+#outcome {
+	padding-bottom: 40px;
+}
+
+#outcome a.scroll {
+	display: block;
+	text-align: center;
+	margin-top: 30px;
+	color: #666;
+	transition: 0.5s ease;
+}
+
+#outcome a.scroll:hover {
+	color: red;
+	transition: 0.5s ease;
+}
+
+#outcome .col-sm-6 {
+	height: 220px;
+}
+
+#top-row {
+	border-bottom: solid 8px white;
+	margin-top: 30px;
+}
+
+#bottom-row {
+	border-top: solid 8px white;
+}
+
+#outcome .col-sm-6:nth-child(1) {
+	border-right: solid 8px white;
+}
+
+#outcome .col-sm-6:nth-child(2) {
+	border-left: solid 8px white;
+}
+
+#outcome #wire {
+	background: url('img/minke-wire.jpg');
+	background-size: cover;
+}
+
+#outcome #old-home {
+	background: url('img/minke-home-old.png');
+	background-size: cover;
+}
+
+#outcome #new-home {
+	background: url('img/minke-home-page-new.png');
+	background-size: cover;
+}
+
+#outcome #new-about {
+	background: url('img/minke-about-page.png');
+	background-size: cover;
+}
+
+/*************************** Round Pond ***************************/
+
+#rpc-main-img {
+	background: url('img/waves.jpeg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#rpc-main-img h1 {
+	color: white;
+	text-shadow: 2px 2px 2px black;
+	font-size: 60px;
+	letter-spacing: 3px;
+}
+
+#rpc-main-img h3 {
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	font-size: 30px;
+}
+
+#logo {
+	background: black;
+	position: relative;
+	top: -10px;
+	width: 300px;
+	border-radius: 100%;
+	margin: auto;
+	padding: 1%;
+}
+
+#logo img {
+	border-radius: 100%;
+	border: solid 1px white;
+}
+
+#rpc-wire {
+	background: url('img/rpc-wire.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+#rpc-home {
+	background: url('img/rpc-home.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#rpc-menu {
+	background: url('img/rpc-menu.png');
+	background-size: cover;
+	background-position: center;
+}
+
+#rpc-social {
+	background: url('img/rpc-social.png');
+	background-size: cover;
+	background-position: top center;
+}
+
+/*************************** General Case Study ***************************/
+
+.head-img {
+	height: 650px;
+	width: 90%;
+	max-width: 1300px;
+	background: yellow;
+	margin: 25px auto;
+	display: table;
+}
+
+.head-title {
+	display: table-cell;
+	text-align: center;
+	vertical-align: bottom;
+	padding-bottom: 50px;
+}
+
+.link-container {
+	width: 90%;
+	margin: auto;
+	max-width: 1300px;
+	display: block;
+}
+
+.link-container .col-sm-4 {
+	padding: 5px;
+	background: black;
+	text-align: center;
+}
+
+.link-container .col-sm-4 a {
+	color: white;
+}
+
+/* case-study-body */
+
+#over {
+	margin-top: 50px;
+}
+
+.case-study-body {
+	max-width: 900px;
+	margin: 120px auto;
+	padding: 0px 50px;
+}
+
+.case-study-body strong {
+	color: black;
+}
+
+.case-study-body h1 {
+	text-align: center;
+	margin: 20px auto;
+}
+
+.case-study-body p {
+	font-size: 16px;
+	line-height: 34px;
+}
+
+
+/*************************** About Page ***************************/
+
+.question ul {
+	list-style: none;
+}
+
+.question ul li {
+	padding: 0px;
+	margin: 10px auto;
+	font-size: 18px;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.question {
+	margin: 50px auto;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+#left-skill li {
+	margin-right: 15px;
+}
+
+#right-skill li {
+	padding-left: 15px;
+}
+
+#q-and-a .row .col-sm-6 {
+	padding: 0px;
+	margin: 0px;
+}
+
+#q-and-a .row {
+	margin: 10px auto;
+}
+
+.skill-box {
+	width: 150px;
+	position: absolute;
+	height: 18px;
+	background: white;
+	border: solid 1px #ccc;
+	top: 3px;
+	right: 0px;
+}
+
+.skill-bar {
+	position: absolute;
+	height: 100%;
+	background: #ccc;
+}
+
+#html {
+	width: 95%;
+	animation: barWidth 1s forwards;
+}
+
+#css {
+	width: 90%;
+	animation: barWidth 1s forwards;
+}
+
+#js {
+	width: 75%;
+	animation: barWidth 1s forwards;
+}
+
+#ps {
+	width: 80%;
+	animation: barWidth 1s forwards;
+}
+
+#illu {
+	width: 70%;
+	animation: barWidth 1s forwards;
+}
+
+#ske {
+	width: 90%;
+	animation: barWidth 1s forwards;
+}
+
+#jqu {
+	width: 70%;
+	animation: barWidth 1s forwards;
+}
+
+#boot {
+	width: 85%;
+	animation: barWidth 1s forwards;
+}
+
+#php {
+	width: 65%;
+	animation: barWidth 1s forwards;
+}
+
+#wp {
+	width: 65%;
+	animation: barWidth 1s forwards;
+}
+
+@keyframes barWidth {
+	0% {
+		width: 0%;
+	}
+	
+	100% {
+		width: inherit;
+	}
+}
+
+/*************************** About Page ***************************/
 
 .proj-header-img {
 	height: 80%;
@@ -121,7 +492,7 @@ nav span {
 	color: white;
 	display: flex;
 	justify-content: space-around;
-	font-family: Varela Round;
+	font-family: lato, helvetica, sans-serif;
 	letter-spacing: 1px;
 	font-size: 14px;
 	transition: 1s ease;
@@ -136,13 +507,12 @@ nav span {
 	padding: 5px 0px;
 	display: none;
 	background: white;
-	border-bottom: solid 1px black;
 }
 
 .drop-content ul {
 	text-align: center;
 	list-style: none;
-	padding: 15px 5% 0px 5%;
+	padding: 30px 5% 0px 5%;
 	display: flex;
 	max-width: 900px;
 	margin: auto;
@@ -152,7 +522,7 @@ nav span {
 .drop-content ul li {
 	padding: 10px;
 	display: inline-block;
-	font-family: Varela Round;
+	font-family: lato, helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -165,217 +535,91 @@ nav span {
 	color: #931c1c;
 }
 
-#cont-chall {
-	margin-top: -10px;
-	text-align: center;
-}
-
-#cont-chall .container,
-#design .container,
-#dev .container,
-#results .container {
-	max-width: 850px;
-	font-size: 16px;
-	letter-spacing: 0.5px;
-}
-
-#context {
-	margin-bottom: 60px;
-	padding: 60px 0px;
-	margin-bottom: 0px;
-}
-
-#context strong {
-	color: #D0021B;
-}
-
-#challenge {
-	background: #222;
-	color: white;
-	padding: 60px 0px;
-	margin-bottom: 0px;
-}
-
-#challenge a {
-	color: yellow;
-	text-decoration: underline;
-}
-
 .topic {
-	margin: 50px auto;
+	margin: 80px auto;
 }
 
-#design h1,
-#dev h1,
-#results h1 {
-	margin-top: 80px;
-	margin-bottom: -40px;
-	text-align: center;
-}
-
-#design .container,
-#dev .container,
-#results .container{
-	padding: 50px 20px;
-}
-
-#design p,
-#dev p {
-	margin: 25px auto;
-}
-
-#design .container,
-#dev .container,
-#results .container,
-#branding {
-	margin: auto;
-	font-size: 16px;
-}
-
-.head-box {
-	background: black;
-	color: white;
-	display: inline-block;
-	padding: 5px 10px;
-	font-family: Din Alternate;
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
-	font-size: 40px;
-}
-
-.head-line {
-	background: black;
-	position: relative;
-	top: 13px;
-	height: 3px;
-	z-index: -1;
-}
-
-#cont-chall h1 {
-	font-family: Din Alternate;
-	text-transform: uppercase;
-	font-size: 40px;
-	margin-bottom: 0px;
-	letter-spacing: 1.5px;
-}
-
-#challenge h3 {
-	font-family: Varela Round;
-	font-size: 26px;
-	margin: 35px auto;
-}
-
-#cont-chall p {
-	margin: 30px auto;
-}
-
-#challenge strong {
-	color: yellow;
-}
-
-#roadblock {
-	background: #12537D;
-	color: white;
-	padding: 10px auto;
-}
-
-#roadblock h2 {
-	text-transform: uppercase;
-	letter-spacing: 4px;
-	margin-bottom: 50px;
-	font-size: 45px;
-	text-align: center;
-	text-shadow: 5px 3px 0px #6282a1;
-}
-
-#roadblock h3 {
-	font-family: Varela Round;
-	font-size: 14px;
-	letter-spacing: 1px;
-	color: #ccc;
-	margin-bottom: 40px;
-}
-
-#roadblock .container {
-	line-height: 25px;
-	max-width: 750px;
-	text-align: center;
-}
-
-#roadblock img {
-	margin: 30px auto 0px;
-}
-
-#roadblock p {
-	margin: 20px auto;
-}
-
-#buttonBox {
-	padding: 20px 0px;
-	display: flex;
-	width: 100%;
-	justify-content: space-around;	
-}
-
-#results .container {
-	margin-top: 30px;
-}
-
-#results p {
-	font-size: 16px;
-	line-height: 25px;
-}
-
-#results .scroll {
-	display: block;
-	color: #999;
-	text-align: center;
-	margin-top: 45px;
-}
-
-.liveButton {
-	padding: 10px 100px;
-	background: black;
-	border: double 3px white;
-	border-radius: 10px;
-	color: white;
-}
-
-.liveButton:hover {
-	background: #D0021B;
-}
-
-.liveButton:active {
-	background: #890918;
-	position: relative;
-	top: 2px;
-}
-
-#seeMore {
-	background: black;
-	width: 100%;
-	height: 80px;
-}
-
-#seeMore .container {
-	display: flex;
-	justify-content: space-around;	
-}
-
-#seeMore .container a {
-	color: white;
-	border: solid 1px white;
-	padding: 10px 40px;
-	text-transform: uppercase;
-	font-family: Din Alternate;
-	font-size: 25px;
-	margin-top: 25px;
-}
-
-#seeMore .container a:hover {
-	background: white;
+.topic strong {
 	color: black;
 }
+
+.topic h3 {
+	font-size: 30px;
+}
+
+.topic img,
+.topic iframe {
+	margin: 20px auto;
+	box-shadow: 0px 0px 5px #bbb;
+}
+
+#issue img {
+	margin-top: 50px !important;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+#issue h3 {
+	color: #ddd;
+	letter-spacing: 2px;
+	margin-bottom: 50px !important;
+	text-align: center;
+	font-family: lato, helvetica, sans-serif;
+	font-size: 16px;
+}
+
+#issue-box {
+	max-width: 850px;
+	margin: auto;
+}
+
+/*************************** Contact Page ***************************/
+
+#contact {
+	height: 100%;
+	background: #12537D;
+	margin-top: -20px;
+	padding-top: 100px;
+}
+
+#contact h1 {
+	color: white;
+	text-align: center;
+	font-size: 85px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-shadow: 3px 3px 8px black;
+}
+
+#contact form {
+	display: block;
+	
+	margin: 25px auto;
+	max-width: 440px;
+}
+
+#contact input,
+#contact textarea {
+	display: block;
+	margin: 20px auto;
+	width: 100%;
+	padding: 8px 5px;
+	border-radius: 13px;
+	background: rgba(500,500,500,0.08);
+	border: solid 3px white;
+	color: white;
+	box-shadow: 2px 4px 3px #000;
+}
+
+
+#contact input[type=submit] {
+	width: 100px;
+	position: relative;
+	right: -170px;
+	background: #093049;
+}
+
 
 /* FOOTER STYLES */
 
@@ -383,15 +627,14 @@ footer {
 	background: black;
 	text-align: center;
 	color: white;
-	padding: 2.5px;
+	padding: 30px 2.5px;
 	font-family: Din Alternate;
 }
 
-footer h3 a {
+footer a, footer h3 {
+	font-family: Oswald;
 	color: white;
-	font-family: Din Alternate;
-	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 30px;
 }
 
 /* Sketch Sections */
@@ -408,7 +651,7 @@ footer h3 a {
 	text-align: center;
 	padding-top: 50px;
 	margin-bottom: -50px;
-	font-family: Varela Round;
+	font-family: lato, helvetica, sans-serif;
 	font-size: 32px;
 	letter-spacing: 1px;
 }
@@ -419,7 +662,7 @@ footer h3 a {
 	opacity: 1;
 }
 
-.carousel-control:hover {
+#sketchCarousel .carousel-control:hover {
 	color: yellow;
 }
 
@@ -428,7 +671,7 @@ footer h3 a {
 	padding: 8px;
 }
 
-.carousel-indicators .active {
+#sketchCarousel .carousel-indicators .active {
 	background: white !important;
 	opacity: 1 !important;
 	border-color: white !important;
@@ -463,8 +706,9 @@ footer h3 a {
 }
 
 .sketchComment h4 {
-	font-family: Varela Round;
-	font-size: 25px;
+	font-family: Din Alternate;
+	font-size: 30px;
+	letter-spacing: 1px;
 	color: yellow;
 	width: 250px;
 }
@@ -618,27 +862,36 @@ footer h3 a {
 
 #mapLine{
 	top: -480px;
-	left: 22%;
+	left: 24%;
 }
 
 #rpc-map{
 	top: -510px;
 }
 
+/* MINKE SPECIFIC */
+
+
 /* ABOUT PAGE-TOP */
+
+#about-photo {
+	background: white;
+	min-height: 600px;
+}
 
 #photo-circ {
 	height: 300px;
 	width: 300px;
 	background: url('img/retro-jalia.jpg');
 	background-size: cover;
-	border-radius: 100%;
+	border-radius: 100%;	
 }
 
 #outer-circ {
 	padding: 8px;
 	border: solid 2px black;
 	display: block;
+	background: white;
 	width: 320px;
 	border-radius: 100%;
 	margin: auto;
@@ -646,11 +899,12 @@ footer h3 a {
 
 #vertical-line {
 	width: 3px;
-	height: 130px;
+	height: 80px;
 	background: black;
 	position: relative;
 	display: block;
 	margin: auto;
+	animation: dropLines 0.5s forwards;
 }
 
 #drop-circles {
@@ -664,10 +918,11 @@ footer h3 a {
 	position: absolute;
 	width: 3px;
 	background: black;
+	animation: dropLines 1s forwards;
 }
 
 #drop-line-1 {
-	height: 260px;
+	height: 300px;
 	left: 8%;
 }
 
@@ -699,7 +954,7 @@ footer h3 a {
 }
 
 #drop-line-3 {
-	height: 190px;
+	height: 220px;
 	left: 20%;
 }
 
@@ -737,7 +992,7 @@ footer h3 a {
 }
 
 #drop-line-8 {
-	height: 190px;
+	height: 220px;
 	left: 80%;
 }
 
@@ -747,7 +1002,7 @@ footer h3 a {
 }
 
 #drop-line-0 {
-	height: 260px;
+	height: 300px;
 	left: 91%;
 }
 
@@ -765,7 +1020,7 @@ footer h3 a {
 }
 
 #drop-line-left, #drop-line-right {
-	height: 35px;
+	height: 55px;
 	position: absolute;
 }
 
@@ -775,6 +1030,16 @@ footer h3 a {
 
 #drop-line-right {
 	left: 60%;
+}
+
+@keyframes dropLines {
+	0% {
+		height: 0px;
+	}
+	
+	100% {
+		height: inherit;
+	}
 }
 
 #about-photo {
@@ -812,7 +1077,7 @@ footer h3 a {
 #q-and-a {
 	border-top: double 10px #12537D;
 	width: 100%;
-	margin-top: 100px;
+	margin-top: 70px;
 	margin-bottom: 90px;
 }
 
@@ -867,7 +1132,6 @@ footer h3 a {
 
 .sketchComment h4 {
 	font-size: 20px;
-	margin-bottom: -10px;
 }
 
 #sketchCarousel {
@@ -950,8 +1214,7 @@ footer h3 a {
 	transition: 2s ease;
 }
 
-.navbar button:active {
-	transform: rotate(360deg);
+.navbar button {
 	transition: 2s ease;
 }
 
@@ -982,9 +1245,13 @@ footer h3 a {
 	height: 95%;
 }
 
-#branding img {
-	max-width: 260px;
-	margin-bottom: 80px;
+.col-sm-6 {
+	border: none !important;
+	margin-bottom: 20px;
+}
+
+.row {
+	border: none !important;
 }
 	
 }

@@ -34,7 +34,7 @@
 		  
 		  <div id="top-nav" class="navbar-collapse collapse">
 			  <ul>
-				  <li><a class="underlineAnim" href="index.html">Home</a></li>
+				  <li><a class="underlineAnim" href="cover.html">Home</a></li>
 				  <li><a class="underlineAnim" href="work.html">Work</a></li>
 				  <li><a class="underlineAnim" href="about.html">About</a></li>
 				  <li><a class="underlineAnim" href="contact.html">Contact</a></li>
@@ -43,99 +43,68 @@
 	  </div><!-- end of container-fluid -->
   </nav><!-- end of navigation -->
   
-  <section class="proj-header-img" id="rpc-head">
-	  <div class="logo">
-		  <div id="rpc-logo-back">
-			  <img src="img/FINALRPCLOGO.png">
-		  </div><!-- logo-back end -->
-	  </div><!-- logo end -->
-  </section><!-- end of proj-header-img -->
-  
-  
-  <section id="links">
-	  <div id="link-line"></div>
+ <section id="cs-header">
 	  
-	  <div class="links-block row">
-		  <div class="link-box col-sm-4 col-xs-4">
-			  <a href="https://rp-coffee.com">Live Site</a>
-		  </div><!-- end of link-box -->
-		  
-		  <div class="link-box col-sm-4 col-xs-4">
-			  <a href="https://github.com/irohdesign/round-pond">Github</a>
-		  </div><!-- end of link-box -->
-		  
-		  <div class="link-box col-sm-4 col-xs-4" id="outlineTrig">
-			  <a>Outline</a><!-- BUILD TRIGGER -->
-		  </div><!-- end of link-box -->
-		  
-		  
-	  </div><!-- end of row -->
+	  <div id="rpc-main-img" class="head-img">
+		  <div class="head-title" id="minke-title">
+			  <div id="logo">
+				  <img src="img/FINALRPCLOGO.png">
+				</div>
+				  <h1>Round Pond Coffee</h1>
+				  <h3>Local Business Site</h3>
+			 
+		  </div>
+	  </div><!-- minke-main-img -->
 	  
+	  <div class="link-container">
+		  <div class="col-sm-4">
+			  <a href="">Live Site</a>
+		  </div>
+		  <div class="col-sm-4">
+			  <a href="">Github</a>
+		  </div>
+		  <div class="col-sm-4">
+			  <a id="outlineTrig">Outline</a>
+		  </div>
+	  </div><!-- link-container -->
+
+  </section><!-- cs-header -->
+
+ <br><br>		  
 	  
 	  	<div class="drop-content">
 		  <ul>
-			<li><a class="scroll" href="#context">Context</a></li>
+			<li><a class="scroll" href="#over">Overview</a></li>
 			<li><a class="scroll" href="#challenge">Challenge &amp; Solution</a></li>
 			<li><a class="scroll" href="#design">Design Process</a></li>
 			<li><a class="scroll" href="#dev">Development</a></li>
-			<li><a class="scroll" href="#results">Results</a></li>
+			<li><a class="scroll" href="#outcome">Outcome</a></li>
 		  </ul>
 	  </div><!-- end of drop-content -->	
 
- </section><!-- end of links -->
 
-	  
-<section id="cont-chall">
-  <section id="context">
-	  <div class="context-box container">
-		  <div class="context-text">
-			  <h1>Overview</h1>
+ <section id="over" class="case-study-body">
+	  <h1>Overview</h1>
 			  
 			  <p>Round Pond Coffee has a devoted following in Coastal Maine. Their <a href="">Facebook</a> and <a href="">Yelp</a> pages are overflowing with rave reviews, villagers chat while waiting for a cappuccino (unthinkable in Round Pond less than 5 years ago) and local artists display their work on the walls.</p>
 			  <p>With the store growing more and more each year, the owners were looking to expand their reach and hired me. <strong>I built them a website that would bring in more tourists from neighboring hotspots, show off their menu, and increase their visibility online.</strong></p>
-		  </div>
-	  </div>
-  </section><!-- end of context -->
+
+ </section><!-- context -->
   
-  <section id="challenge">
-	  <div class="container">
-		  <h1>The Challenge</h1>
+  <section id="challenge" class="case-study-body">
+
+		  <h1>The Challenge &amp; The Solution</h1>
 		  
-		  <p>The primary challenge in building this website was the region’s lack of cell reception. To say that Round Pond has poor digital infrastructure would be an understatement.</p> 
+		  <p>The primary challenge in building this website was the region’s lack of cell reception. To say that Round Pond has poor digital infrastructure would be an understatement. Complete pages in Maine take minutes to fully load. I designed the site to be functional as soon as possible, even if the page cannot finish loading.</p> 
 		  
-		  <h3>In 2014, Maine’s internet speed ranked at <strong><a href="">49th in the country.</a></strong> Most of Maine’s counties top download speeds range between <strong>40-60 percent below the national average.</strong></h3>
+		  <p>In 2014, Maine’s internet speed ranked at <strong><a href="">49th in the country.</a></strong> Most of Maine’s counties top download speeds range between <strong>40-60 percent below the national average.</strong></p>
 		  
-		  <p>Complete pages in Maine take minutes to fully load. I designed the site to be functional as soon as possible, even if the page cannot finish loading.</p>
+		 
+		  <p id="prereq"><strong>This website needed to be fast, lightweight, and function even when not fully loaded.</strong></p>
 		  
-		  <p><strong>This website needed to be fast, lightweight, and most importantly; fail gracefully.</strong></p>
-		  
-	  </div><!-- end of container -->
   </section><!-- end of #challenge -->
-</section><!-- cont-call end -->
-  
-  <section id="design">
-	  
-			  
- <h1><div class="head-box">Design Process</div></h1>
-	  <div class="head-line"></div>   
 
-<div class="container">
-	
-	
-		  <div class="topic">
-			  <h3>Mobile-First Approach</h3>
-		  <p>Tourists primarily search for food using their phones. I prioritized the mobile user experience so that customers would be able to find the store while visiting nearby attractions.</p>
-		  </div><!-- topic end -->
-
-		<div class="topic">
-			<h3>Prioritizing User Experience</h3>
-		<p>I used Bootstrap and jQuery to build an interactive menu based on tabs. Users now have access to an entire menu without having to open a separate document or webpage.</p>
-
-<p>The menu's tabs save valuable screen real estate and minimize unnecessary scrolling. The smooth scroll improves user experience and reinforces the availability to the rest of the page.</p>
-		</div><!-- topic end -->
-	</div>
-	
-	<div id="sketchCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+ <div id="sketchCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
 				  
 				  <h3>Mobile Sketches</h3>
 				  
@@ -250,31 +219,38 @@
 		                <span class="sr-only">Next</span>
 		            </a> 
 		        </div><!-- end of carousel -->
-  </section><!-- end of design section -->
-  
-  <section id="branding">
-		<div class="container row">
-			<div class="col-xs-12 col-md-6">
-				<img src="img/FINALRPCLOGO.png">
-			</div><!-- end of col-sm-5 -->
-			
-			<div class="col-xs-12 col-md-6">
-				<div class="branding-text">
+
+<section id="design" class="case-study-body">
+	  
+  <h1>Design Process</h1>
+	
+	
+		  <div class="topic">
+			  <h3>Mobile-First Approach</h3>
+		  <p>Tourists primarily search for food using their phones. I prioritized the mobile user experience so that customers would be able to find the store while visiting nearby attractions.</p>
+		  </div><!-- topic end -->
+
+		<div class="topic">
+			<h3>Prioritizing User Experience</h3>
+		<p>I used Bootstrap and jQuery to build an interactive menu based on tabs. Users now have access to an entire menu without having to open a separate document or webpage.</p>
+
+<p>The menu's tabs save valuable screen real estate and minimize unnecessary scrolling. The smooth scroll improves user experience and reinforces the availability to the rest of the page.</p>
+		</div><!-- topic end -->
+	</div>
+<div class="topic">
 					<h2>Branding Choices</h2>
 					<p>Round Pond Coffee is a small, locally-owned business. Customers choose to support their Maine-made coffee blends because they want an authentic experience.</p>
 
 <p>I decided to balance the graphic design, making it modern and easy to use, but not too flashy or trendy. I paid special attention to match the website to the shop’s personal brand and message.</p>
-				</div>
-			</div><!-- end of col-sm-7 -->
-		</div><!-- end of container -->
-	</section><!-- end of branding -->
+</div>
+
+  </section><!-- end of design section -->
   
-  <section id="dev">
-	  <h1><div class="head-box">Development</div></h1>
-	  <div class="head-line"></div>
-	  
-	  
-	  <div class="container">
+  
+ 
+  
+  <section id="dev" class="case-study-body">
+  <h1>Build Process</h1>
 		  <div class="topic">
 			  <h3>Balancing Speed &amp; Performance</h3>
 			  <p>I trimmed down the code and files to keep the website as fast as possible. I used Bootstrap’s framework because the built-in styles and scripts kept the code from getting too dense.</p>
@@ -285,10 +261,10 @@
 
 		  </div><!-- end of topic -->
 	  </div><!-- container end -->
-	  
-	  <article id="roadblock">
-		  <div class="container">
+	  </section><!-- dev end -->
+	  <section id="issue">
 		 
+		 <div id="issue-box">
 		  
 		   <h2>Roadblock</h2>
 		  
@@ -297,8 +273,8 @@
 		  <p>While testing across all the major browsers, I found a bug. Despite the images appearing on all other major browsers, the photos would not display on Safari.</p>
 
 
-<img src="img/Instagram-fail.png">
-<h3>Safari Before the Fix</h3>
+		  <img src="img/Instagram-fail.png">
+		  <h3>Safari Before the Fix</h3>
 
 <p>I looked through Stack Overflow and found other developers with the same issue. Through a combination of the advice on the forum and my own digging, I discovered the issue.</p>
 
@@ -308,29 +284,31 @@
 <img src="img/Instagram-Success.png">
 <h3>Safari After the Fix</h3>
 		  </div><!-- end of container -->
-	  </article><!-- end of roadblock -->
   </section><!-- end of dev section -->
   
-  <section id="results">
-	  <h1><div class="head-box">Results</div></h1>
-	  <div class="head-line"></div>
+  <section id="outcome" class="case-study-body">
+  	<h1>Outcome</h1>
 	  
-	  
-	  <div class="container">
 	  <p>The project was a complete success.  The website is easily legible for tourists in the area, quickly helps people find the shop's location, and swiftly loads across both Apple and Android mobile devices.</p>
 	  <p>The owners are very happy with the finished product. I launched the site in early 2018, just in time for the shop's summer season. I am planning to shift the site towards a dynamic, custom Wordpress theme at the end of the season, after getting feedback from the Summer 2018 season.</p>
+
 	  
+ <div class="row" id="top-row">
+	<div class="col-sm-6" id="rpc-wire"></div>
+	<div class="col-sm-6 " id="rpc-home"></div>
+</div>
+<div class="row" id="bottom-row">
+	<div class="col-sm-6" id="rpc-menu"></div>
+	<div class="col-sm-6" id="rpc-social"></div>
+</div>
 	
 	  
 	  	<a class="scroll" href="#top">Return to Top <span class="glyphicon glyphicon-arrow-up"></span></a>
-	  </div><!-- end of container -->
   </section><!-- end of results section-->
 
 <section id="seeMore">
-	<div class="container">
 		<a href="about.html">See Who I Am</a>
 		<a href="work.html">See What I Do</a>
-	</div>
 </section><!-- end of seeMore -->
 
 <footer>
