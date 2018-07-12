@@ -1,4 +1,4 @@
-/* COLORS 
+/* COLORS
 BLUE SAPPHIRE : #12537D
 DARK IMPERIAL BLUE : #164869
 PRUSSIAN BLUE(1) : #0C3C5A
@@ -21,12 +21,12 @@ a:hover {
 	margin: auto;
 }
 
-* { 
-	font-family: lato, helvetica, sans-serif;
+* {
+	font-family: 'varela round', helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: Oswald;
+	font-family: 'Varela Round';
 	text-transform: uppercase;
 }
 
@@ -458,7 +458,7 @@ nav span {
 	0% {
 		width: 0%;
 	}
-	
+
 	100% {
 		width: inherit;
 	}
@@ -594,7 +594,7 @@ nav span {
 
 #contact form {
 	display: block;
-	
+
 	margin: 25px auto;
 	max-width: 440px;
 }
@@ -632,7 +632,7 @@ footer {
 }
 
 footer a, footer h3 {
-	font-family: Oswald;
+	font-family: rubik;
 	color: white;
 	font-size: 30px;
 }
@@ -725,7 +725,7 @@ footer a, footer h3 {
 	width: 18%;
 	z-index: 2;
 }
- 
+
 /* RPC CUSTOM STYLES */
 #rpc-head {
 	background: url('img/waves.jpeg');
@@ -756,7 +756,7 @@ footer a, footer h3 {
 }
 
 #branding .container {
-	max-width: 1150px; 
+	max-width: 1150px;
 	margin: auto;
 	padding: 10px;
 }
@@ -884,7 +884,7 @@ footer a, footer h3 {
 	width: 300px;
 	background: url('img/retro-jalia.jpg');
 	background-size: cover;
-	border-radius: 100%;	
+	border-radius: 100%;
 }
 
 #outer-circ {
@@ -904,7 +904,6 @@ footer a, footer h3 {
 	position: relative;
 	display: block;
 	margin: auto;
-	animation: dropLines 0.5s forwards;
 }
 
 #drop-circles {
@@ -918,7 +917,6 @@ footer a, footer h3 {
 	position: absolute;
 	width: 3px;
 	background: black;
-	animation: dropLines 1s forwards;
 }
 
 #drop-line-1 {
@@ -1036,7 +1034,7 @@ footer a, footer h3 {
 	0% {
 		height: 0px;
 	}
-	
+
 	100% {
 		height: inherit;
 	}
@@ -1084,8 +1082,8 @@ footer a, footer h3 {
 #q-and-a h1 {
 	text-align: center;
 	color: #12537D;
-	font-family: Rubik;
 	text-transform: uppercase;
+	font-size: 35px;
 }
 
 #headerbox{
@@ -1100,6 +1098,7 @@ footer a, footer h3 {
 	text-transform: uppercase;
 	font-family: Rubik;
 	font-weight: 400;
+	font-size: 30px;
 }
 
 #questions-answers {
@@ -1108,13 +1107,24 @@ footer a, footer h3 {
 	padding: 0px 15px;
 }
 
+.question {
+	margin: 45px auto;
+}
+
+.question p {
+	font-size: 16px;
+	color: #777;
+	font-weight: lighter;
+	margin-top: 15px;
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1024px) {
 
 
 #rpc-contrast,
 #rpc-collapsed,
-#rpc-solidBack, 
+#rpc-solidBack,
 #rpc-clear,
 #rpc-handwrite,
 #rpc-address,
@@ -1230,7 +1240,7 @@ footer a, footer h3 {
 	position: absolute;
 	right: 0px;
 }
-	
+
 #top-nav ul {
 	flex-direction: column;
 	padding: none;
@@ -1253,5 +1263,5 @@ footer a, footer h3 {
 .row {
 	border: none !important;
 }
-	
+
 }
