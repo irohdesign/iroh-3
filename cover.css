@@ -461,7 +461,11 @@ html, body {
 }
 
 .colorbox a {
-	color: orange;
+	color: yellow;
+}
+
+.colorbox a:hover {
+	text-decoration: underline;
 }
 
 /* indexLinks */
