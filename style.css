@@ -406,62 +406,42 @@ nav span {
 
 #html {
 	width: 95%;
-	animation: barWidth 1s forwards;
 }
 
 #css {
 	width: 90%;
-	animation: barWidth 1s forwards;
 }
 
 #js {
 	width: 75%;
-	animation: barWidth 1s forwards;
 }
 
 #ps {
 	width: 80%;
-	animation: barWidth 1s forwards;
 }
 
 #illu {
 	width: 70%;
-	animation: barWidth 1s forwards;
 }
 
 #ske {
 	width: 90%;
-	animation: barWidth 1s forwards;
 }
 
 #jqu {
 	width: 70%;
-	animation: barWidth 1s forwards;
 }
 
 #boot {
 	width: 85%;
-	animation: barWidth 1s forwards;
 }
 
 #php {
 	width: 65%;
-	animation: barWidth 1s forwards;
 }
 
 #wp {
 	width: 65%;
-	animation: barWidth 1s forwards;
-}
-
-@keyframes barWidth {
-	0% {
-		width: 0%;
-	}
-
-	100% {
-		width: inherit;
-	}
 }
 
 /*************************** About Page ***************************/
@@ -651,7 +631,6 @@ footer a, footer h3 {
 	text-align: center;
 	padding-top: 50px;
 	margin-bottom: -50px;
-	font-family: lato, helvetica, sans-serif;
 	font-size: 32px;
 	letter-spacing: 1px;
 }
