@@ -292,6 +292,20 @@ nav span {
 
 /*************************** String Theory ***************************/
 
+#st-main-img {
+	background: url('img/guitar.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+
+#st-main-img h1 {
+	font-size: 100px;
+	text-shadow: 3px 5px black;
+	letter-spacing: 5px;
+}
+
 /*************************** General Case Study ***************************/
 
 .head-img {
