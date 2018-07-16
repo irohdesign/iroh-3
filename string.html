@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>String Theory</title>
+
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!-- font awesome -->
+
+	<link href="style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  </head>
+
+
+ <body>
+  <nav class="navbar" id="top">
+	  <div class="container-fluid">
+		  <div class="navbar-header hidden-sm hidden-md hidden-lg">
+
+			  <a class="navbar-brand" href="index.html">Iroh</a>
+
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+			  	<span class="sr-only">Toggle Navigation</span>
+			  	<span class="glyphicon glyphicon-plus"></span>
+			  </button>
+
+		  </div><!-- end navbar-header -->
+
+		  <div id="top-nav" class="navbar-collapse collapse">
+			  <ul>
+				  <li><a class="underlineAnim" href="cover.html">Home</a></li>
+				  <li><a class="underlineAnim" href="work.html">Work</a></li>
+				  <li><a class="underlineAnim" href="about.html">About</a></li>
+				  <li><a class="underlineAnim" href="contact.html">Contact</a></li>
+			  </ul>
+		  </div><!-- end of top-nav -->
+	  </div><!-- end of container-fluid -->
+  </nav><!-- end of navigation -->
+
+ <section id="cs-header">
+
+	  <div id="st-main-img" class="head-img">
+		  <div class="head-title" id="minke-title">
+				  <h1>String Theory</h1>
+				  <h3>Single Page Web App</h3>
+		  </div>
+	  </div><!-- minke-main-img -->
+
+	  <div class="link-container">
+		  <div class="col-sm-4">
+			  <a href="">Live Site</a>
+		  </div>
+		  <div class="col-sm-4">
+			  <a href="">Github</a>
+		  </div>
+		  <div class="col-sm-4">
+			  <a id="outlineTrig">Outline</a>
+		  </div>
+	  </div><!-- link-container -->
+
+  </section><!-- cs-header -->
+
+ <br><br>
+
+	  	<div class="drop-content">
+		  <ul>
+			<li><a class="scroll" href="#over">Overview</a></li>
+			<li><a class="scroll" href="#challenge">Challenge &amp; Solution</a></li>
+			<li><a class="scroll" href="#design">Design Process</a></li>
+			<li><a class="scroll" href="#dev">Development</a></li>
+			<li><a class="scroll" href="#outcome">Outcome</a></li>
+		  </ul>
+	  </div><!-- end of drop-content -->
+
+
+ <section id="over" class="case-study-body">
+	  <h1>Overview</h1>
+
+    <p>String Theory is a single-page web application that I built while refurbishing my Ibanez 12-string guitar. I wasn’t experienced with vintage instruments, having only worked with newer models, so I went to several stores and looked online for advice on how to properly restring it.</p>
+
+    <p>My first job was selling and repairing instruments, so I felt fairly confident going into the process. As I dug deeper, I became more and more frustrated. Store assistance wasn’t very useful because I was often recommended brands with little explanation that didn’t fit my preferences, while blogs and websites gave me text-heavy posts where I needed to dig through 15 paragraphs to find the one applicable section.</p>
+
+ </section><!-- context -->
+
+  <section id="challenge" class="case-study-body">
+
+		  <h1>The Challenge &amp; The Solution</h1>
+
+      <p>The right set of strings are vital when playing guitar, but finding that set is difficult. There are hundreds of options and it’s easy to get overwhelmed. Strings are also hard to pick because music is subjective and each musician is unique. They prefer different tones and may just not like how a certain brand feels on the fingertips.</p>
+
+      <p>I built the String Theory application because I wanted to streamline the selection process. It’s a simple but effective tool that takes in the user’s experience level and genre choice, and returns with not only string recommendations, but also the reasoning <strong>behind</strong> those options so users can make informed decisions about their instrument care and sound.</p>
+
+      <p>My main frustration while purchasing strings myself is that personal preference isn’t taken into account, so I included the mechanics behind string recommendations to enable users to make the decision for themselves and take the process into their own hands.</p>
+
+
+  </section><!-- end of #challenge -->
+
+<section id="design" class="case-study-body">
+
+  <h1>Design Process</h1>
+
+		  <div class="topic">
+
+        <p>The biggest hurtle in the design process was establishing effective parameters. I combed through dozens of reviews and articles online to decide on the major determining factors: <strong>experience level and desired genre.</strong></p>
+
+        <p>I chose experience level primarily because of my years playing and selling guitars. Beginners  lack the necessary fingertip callouses and therefore struggle with thicker strings. Their hands get sore faster so they aren’t able to practice as often and this slows their learning process. I’ve known many people who want to play guitar, but struggle with metal strings and eventually quit.</p>
+
+        <p>I chose genre as the second input because string material greatly impacts sound quality and tone. If a head banging metal guitarist picks up a pair of light gauge country strings, they’ll likely break them within the week (and even if they don’t, they would sound too quiet). If a rocker, who’s hoping to solo like Chuck Berry, picks up flat wound jazz strings, he’ll never get the speed he needs.</p>
+
+        <p>Most musicians find their preferred set of strings through years of trial and error, which can be very expensive and time-consuming. String Theory personalizes the shopping process by taking the user’s experience level and genre choice into account and focusing on personal preferences.</p>
+
+		  </div><!-- topic end -->
+
+  </section><!-- end of design section -->
+
+
+
+
+  <section id="dev" class="case-study-body">
+  <h1>Build Process</h1>
+
+<div class="topic">
+  <p>String Theory was designed to be quick and fast, and the code mirrors that quality. The designs in Sketch were clean and modern. I wrote with Bootstrap and jQuery to minimize the CSS and Javascript. The logo is an SVG that is optimized for faster load time.</p>
+
+  <p>I started off with HTML text entry fields, using Javascript to convert those strings into lowercase and match them up with a list of expected results. While this worked well when I personally used it, it didn’t stand up to user testing, as users rarely do what you want them to do.</p>
+
+  <p>Experience level worked as a text input at first glance because users would need to enter a specific number. It was effective as long as users wrote “1, 2, 3…” but if users entered in “one, two, three” the form would fail.</p>
+
+  <p>I changed the experience input to a number stepper to give no room for error and simplify the entry process.</p>
+
+  <p>I passed the form to a few friends for experimentation, and they immediately abandoned the recommended inputs and started entering their own sub-genres of music (Electroswing, Nordic Metal, Smooth Jazz). Text entry wasn’t going to work for genres because there are <strong>too many options that could be entered.</strong> Throwing an error every time a user steps out of line seemed impolite, so I changed the method.</p>
+
+  <p>I switched the genre input to a dropdown menu with four options: Jazz, Rock, Blues and Metal. These four genres have the most distinct string requirements and are widely recognized.</p>
+
+  <p>The results are built into the page even when not active, because I used CSS to set the display attribute to none. This means that the form does not need to reference another document to retrieve results, and the page doesn’t refresh. This strategy makes the form much faster.</p>
+
+  <p>I was annoyed by the many string recommendations online with no clear link to the products, so I made sure to include three options for each result that have anchors not only in the string’s title, but also in the image. Bigger targets are easier for users to click and make the experience better.</p>
+</div>
+  </section><!-- end of dev section -->
+
+  <section id="outcome" class="case-study-body">
+  	<h1>Outcome</h1>
+
+	  <p>String Theory is a personal project that I started largely out of frustration. I wanted a better vehicle for the information, so I built one. I sat down and researched not only the top recommended brands and models, but also the logic behind those choices. I made an interactive tool that simplifies the choice and prioritizes the musician’s experience.</p>
+
+    <p>Building this application was good experience because it made me practice good judgement and critical thinking when applying my coding skills. Programming languages and tools are very important, but the ability to think and plan implementation of those technologies is more important when trying to get the job done.</p>
+
+
+ <div class="row" id="top-row">
+	<div class="col-sm-6" id="rpc-wire"></div>
+	<div class="col-sm-6 " id="rpc-home"></div>
+</div>
+<div class="row" id="bottom-row">
+	<div class="col-sm-6" id="rpc-menu"></div>
+	<div class="col-sm-6" id="rpc-social"></div>
+</div>
+
+
+	  	<a class="scroll" href="#top">Return to Top <span class="glyphicon glyphicon-arrow-up"></span></a>
+  </section><!-- end of results section-->
+
+<section id="seeMore">
+		<a href="about.html">See Who I Am</a>
+		<a href="work.html">See What I Do</a>
+</section><!-- end of seeMore -->
+
+<footer>
+	<h3><a href="index.html">Iroh Design</a> &copy; 2018</h3>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

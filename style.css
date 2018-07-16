@@ -290,6 +290,8 @@ nav span {
 	background-position: top center;
 }
 
+/*************************** String Theory ***************************/
+
 /*************************** General Case Study ***************************/
 
 .head-img {
@@ -717,49 +719,79 @@ nav span {
 
 /*************************** Contact Page ***************************/
 
-#contact {
-	height: 100%;
-	background: #12537D;
-	margin-top: -20px;
-	padding-top: 100px;
+#contactHead {
+	height: 200px;
 }
 
-#contact h1 {
-	color: white;
-	text-align: center;
-	font-size: 85px;
-	font-weight: 400;
-	letter-spacing: 3px;
-	text-shadow: 3px 3px 8px black;
-}
-
-#contact form {
-	display: block;
-
-	margin: 25px auto;
-	max-width: 440px;
-}
-
-#contact input,
-#contact textarea {
-	display: block;
-	margin: 20px auto;
-	width: 100%;
-	padding: 8px 5px;
-	border-radius: 13px;
-	background: rgba(500,500,500,0.08);
-	border: solid 3px white;
-	color: white;
-	box-shadow: 2px 4px 3px #000;
-}
-
-
-#contact input[type=submit] {
-	width: 100px;
+#contact-illustration {
 	position: relative;
-	right: -170px;
-	background: #093049;
+	max-width: 700px;
+	width: 50%;
+	margin: auto;
 }
+
+.contactLine {
+	width: 2px;
+	background: black;
+	position: absolute;
+	top: 0px;
+}
+
+.contact-bub {
+	height: 15px;
+	width: 15px;
+	border: solid 2px black;
+	background: white;
+	border-radius: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: -7.5px;
+}
+
+#contact-illustration #a {
+		height: 80px;
+}
+
+#contact-illustration #b {
+		left: 10%;
+		height: 110px;
+}
+
+#contact-illustration #c {
+		left: 20%;
+		height: 80px;
+}
+
+#contact-illustration #d {
+		left: 40%;
+		height: 40px;
+}
+
+#contact-illustration #e {
+		left: 50%;
+		height: 60px;
+}
+
+#contact-illustration #f {
+		left: 60%;
+		height: 40px;
+}
+
+#contact-illustration #g {
+		left: 80%;
+		height: 80px;
+}
+
+#contact-illustration #h {
+		left: 90%;
+		height: 110px;
+}
+
+#contact-illustration #i {
+		left: 100%;
+		height: 80px;
+}
+
 
 
 /* FOOTER STYLES */
