@@ -559,7 +559,7 @@ nav span {
 
 #workHead {
 	position: relative;
-	height: 400px;
+	height: 200px;
 	text-align: center;
 }
 
@@ -574,13 +574,13 @@ nav span {
 #work-drop-left {
 	position: absolute;
 	top: 0px;
-	left: 15%;
+	left: 20%;
 }
 
 #work-drop-right {
 	position: absolute;
 	top: 0px;
-	right: 15%;
+	right: 20%;
 }
 
 #workHead .drop-bub {
@@ -625,13 +625,28 @@ nav span {
 }
 
 #bisect-center {
-	height: 300px;
-	width: 3px;
+	height: 350px;
+	width: 2.5px;
 	background: black;
 	position: absolute;
 	top: 0px;
-	left: 49.5%;
+	left: 50%;
 	z-index: -1;
+}
+
+#workListings {
+	max-width: 1200px;
+	margin: auto;
+	display: block;
+}
+
+#workListings .cent-line {
+	height: 400px;
+	width: 2.5px;
+	background: black;
+	position: absolute;
+	left: 50%;
+	top: -400px;
 }
 
 #workListings .proj-cont {
@@ -639,7 +654,7 @@ nav span {
 	width: 250px;
 	border-radius: 100%;
 	background: white;
-	border: solid 2px black;
+	border: solid 2.5px black;
 	display: block;
 	margin: auto;
 	position: relative;
@@ -648,23 +663,25 @@ nav span {
 #workListings .proj-img {
 	height: 235px;
 	width: 235px;
-	background: url('img/cass.jpeg');
-	background-size: cover;
 	border-radius: 100%;
 	position: absolute;
-	top: 6px;
-	left: 6px;
+	top: 5px;
+	left: 5px;
+}
+
+#workListings .proj-summary {
+	padding: 5px 15px;
 }
 
 #workListings .row {
-	margin: auto;
+	margin: auto auto 50px auto;
 	padding: 0px;
 	text-align: center;
 }
 
 #workListings ul {
 	padding: 0px;
-	margin: 0px;
+	margin: 15px 0px;
 	display: flex;
 	justify-content: space-between;
 	background: #164869;
@@ -679,7 +696,24 @@ nav span {
 	letter-spacing: 0.5px;
 }
 
+#rpc-proj {
+	margin-top: 120px;
+}
 
+#minke-proj .proj-img {
+	background: url('img/cass.jpeg');
+	background-size: cover;
+}
+
+#rpc-proj .proj-img {
+	background: url('img/rocky-beach.jpeg');
+	background-size: cover;
+}
+
+#st-proj .proj-img {
+	background: url('img/guitar.jpg');
+	background-size: cover;
+}
 
 /*************************** Contact Page ***************************/
 
@@ -1368,6 +1402,14 @@ footer a, footer h3 {
 
 .row {
 	border: none !important;
+}
+
+#rpc-proj {
+	margin: auto;
+}
+
+#workListings .col-xs-12 {
+	margin: 30px auto;
 }
 
 }
