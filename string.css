@@ -94,6 +94,25 @@ input {
 	display: block;
 }
 
+/**************************
+form stylings
+***************************/
+
+#exp-form select,
+#exp-form input {
+	height: 30px;
+}
+
+#exp-form select,
+#exp-form input[type=number],
+#exp-form option {
+	background: white;
+}
+
+/**************************
+form stylings
+***************************/
+
 ::placeholder {
 	color: black;
 	font-family: 'varela round';
