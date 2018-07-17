@@ -108,9 +108,14 @@
 
 		  <div class="topic">
 
-        <p>The biggest hurtle in the design process was establishing effective parameters. I combed through dozens of reviews and articles online to decide on the major determining factors: <strong>experience level and desired genre.</strong></p>
+        <p>The biggest hurtle in the design process was establishing effective parameters. I combed through dozens of reviews and articles online to decide on the major determining factors: <strong>experience level &amp; genre.</strong></p><br>
 
         <p>I chose experience level primarily because of my years playing and selling guitars. Beginners  lack the necessary fingertip callouses and therefore struggle with thicker strings. Their hands get sore faster so they aren’t able to practice as often and this slows their learning process. I’ve known many people who want to play guitar, but struggle with metal strings and eventually quit.</p>
+
+        <div class="st-img">
+          <img src="img/stringnotes.jpg">
+          <p>Research Notes</p>
+        </div>
 
         <p>I chose genre as the second input because string material greatly impacts sound quality and tone. If a head banging metal guitarist picks up a pair of light gauge country strings, they’ll likely break them within the week (and even if they don’t, they would sound too quiet). If a rocker, who’s hoping to solo like Chuck Berry, picks up flat wound jazz strings, he’ll never get the speed he needs.</p>
 
@@ -135,13 +140,29 @@
 
   <p>I changed the experience input to a number stepper to give no room for error and simplify the entry process.</p>
 
+  <div class="st-img">
+    <img src="img/st-form.png" id="form">
+    <p>Final version of form</p>
+  </div>
+
   <p>I passed the form to a few friends for experimentation, and they immediately abandoned the recommended inputs and started entering their own sub-genres of music (Electroswing, Nordic Metal, Smooth Jazz). Text entry wasn’t going to work for genres because there are <strong>too many options that could be entered.</strong> Throwing an error every time a user steps out of line seemed impolite, so I changed the method.</p>
 
   <p>I switched the genre input to a dropdown menu with four options: Jazz, Rock, Blues and Metal. These four genres have the most distinct string requirements and are widely recognized.</p>
 
   <p>The results are built into the page even when not active, because I used CSS to set the display attribute to none. This means that the form does not need to reference another document to retrieve results, and the page doesn’t refresh. This strategy makes the form much faster.</p>
 
+  <div class="st-img">
+    <div class="col-sm-6">
+      <img src="img/st-blues.png">
+    </div>
+    <div class="col-sm-6">
+      <img src="img/st-nov.png">
+    </div>
+    <p>Form results with recommendation and explanation</p>
+  </div>
+
   <p>I was annoyed by the many string recommendations online with no clear link to the products, so I made sure to include three options for each result that have anchors not only in the string’s title, but also in the image. Bigger targets are easier for users to click and make the experience better.</p>
+
 </div>
   </section><!-- end of dev section -->
 
@@ -151,16 +172,6 @@
 	  <p>String Theory is a personal project that I started largely out of frustration. I wanted a better vehicle for the information, so I built one. I sat down and researched not only the top recommended brands and models, but also the logic behind those choices. I made an interactive tool that simplifies the choice and prioritizes the musician’s experience.</p>
 
     <p>Building this application was good experience because it made me practice good judgement and critical thinking when applying my coding skills. Programming languages and tools are very important, but the ability to think and plan implementation of those technologies is more important when trying to get the job done.</p>
-
-
- <div class="row" id="top-row">
-	<div class="col-sm-6" id="rpc-wire"></div>
-	<div class="col-sm-6 " id="rpc-home"></div>
-</div>
-<div class="row" id="bottom-row">
-	<div class="col-sm-6" id="rpc-menu"></div>
-	<div class="col-sm-6" id="rpc-social"></div>
-</div>
 
 
 	  	<a class="scroll" href="#top">Return to Top <span class="glyphicon glyphicon-arrow-up"></span></a>

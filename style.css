@@ -306,6 +306,23 @@ nav span {
 	letter-spacing: 5px;
 }
 
+.st-img {
+	text-align: center;
+	color: #777;
+	margin: 30px auto;
+	position: relative;
+}
+
+.st-img #form {
+	max-width: 400px;
+	background: #8DA8C4;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+.st-img .col-sm-6 {
+}
+
 /*************************** General Case Study ***************************/
 
 .head-img {
