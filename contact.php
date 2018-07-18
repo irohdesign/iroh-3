@@ -41,13 +41,14 @@ if(isset($_POST['submit'])){
 
 
  <body style="background: rgba(18, 83, 125, .10);">
+
   <nav class="navbar" id="top">
 	  <div class="container-fluid">
 		  <div class="navbar-header hidden-sm hidden-md hidden-lg">
 
 			  <a class="navbar-brand" href="index.html">Iroh</a>
 
-			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
+			  <button type="button" id="contact-button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-nav">
 			  	<span class="sr-only">Toggle Navigation</span>
 			  	<span class="glyphicon glyphicon-plus"></span>
 			  </button>
