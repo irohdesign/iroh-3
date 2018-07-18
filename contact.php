@@ -1,4 +1,25 @@
-<!doctype html>
+<?php
+if(isset($_POST['submit'])){
+    $to = "irohdesign@outlook.com";
+    $from = $_POST['email'];
+    $name = $_POST['name'];
+
+    $subject = "New Information Request";
+    $subject2 = "Information Request Sent!";
+
+    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message ";
+
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    $success = "Success! Your message was sent.";
+    }
+?>
+
+
 <html lang="en">
   <head>
   	    <meta charset="utf-8">
@@ -80,7 +101,7 @@
     <p>I'm <strong>currently accepting</strong> new projects.</p>
     <p>Let's get to know each other.</p>
 
-    <form method="post" name="contactForm" action="mail.php">
+    <form method="post" name="contactForm" action="">
       <textarea placeholder="What do you want to build?" name="message"></textarea>
 
       <div class="row">
@@ -117,8 +138,9 @@
         <input type="text" name="name" placeholder="Your Name">
         <input type="text" name="email" placeholder="Your Email">
 
-        <input type="submit" value="Send">
+        <input type="submit" name="submit" value="Send">
 
+        <?php echo $success; ?>
     </form>
 
   </section>
