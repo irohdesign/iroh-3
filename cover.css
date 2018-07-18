@@ -10,13 +10,15 @@ html, body {
 }
 
 #cover {
-	height: 90%;
+	height: 97%;
 	display: table;
 	position: relative;
+	top: -30px;
 	width: 100%;
 	background: #12537D;
 	padding: 0px;
 	overflow: hidden;
+	margin-bottom: -30px;
 }
 
 #cover-cont {
@@ -71,7 +73,6 @@ html, body {
 }
 
 
-
 /* circle qualities */
 
 
@@ -97,7 +98,6 @@ html, body {
 .medLine {
 	height: 2px;
 	width: 0%;
-	max-width: 450px;
 	background: white;
 	position: absolute;
 	animation: medSlide forwards 1s;
@@ -120,7 +120,6 @@ html, body {
 .largeLine {
 	height: 2px;
 	width: 0%;
-	max-width: 580px;
 	background: white;
 	position: absolute;
 	animation: largeSlide forwards 1.5s;
@@ -306,11 +305,11 @@ html, body {
 	}
 
 	75% {
-		width: 25.5%;
+		width: 24%;
 	}
 
 	100% {
-		width: 25%;
+		width: 22%;
 	}
 }
 
@@ -319,12 +318,12 @@ html, body {
 		width: 0px;
 	}
 
-	75% {
-		width: 44%;
+	95% {
+		width: 35%;
 	}
 
 	100% {
-		width: 40%;
+		width: 32%;
 	}
 }
 
@@ -428,7 +427,7 @@ html, body {
 /* indexText */
 .indexText {
 	color: white;
-	max-width: 500px;
+	max-width: 550px;
 	line-height: 22px;
 	position: absolute;
 	top: 20%;
@@ -443,17 +442,35 @@ html, body {
 .indexText p {
 	font-size: 16px;
 	font-weight: lighter;
-	letter-spacing: 1px;
+	letter-spacing: 1px
 }
 
-.colorbox #second {
-	left: 8%;
+.indexText a {
+	color: white;
+	text-decoration: underline;
 }
 
-.colorbox #first,
-.colorbox #third {
+.indexText a:hover {
+	color: yellow;
+}
+
+#whatDo {
+	left: 10%;
+	top: 130px;
+}
+
+#whoAre {
+	top: 140px;
+}
+
+#whoIroh {
+	top: 120px;
+}
+
+#whoAre,
+#whoIroh {
 	text-align: right;
-	right: 8%;
+	right: 10%;
 }
 
 .colorbox #third {
@@ -468,111 +485,198 @@ html, body {
 	text-decoration: underline;
 }
 
-/* indexLinks */
+/****************************
+mobile-illustration
+****************************/
 
-#indexLinks {
-	background: black;
-	padding: 50px 0px;
-	position: relative;
+#mobile-illustration {
+	position: absolute;
+	background: yellow !impotant;
+	height: 300px;
+	top: 0px;
+	width: 100%;
 }
 
-#indexLinks .container {
-	max-width: 1000px;
+#vertBis {
+	height: 300px;
+	width: 3px;
+	background: white;
+	position: absolute;
+	left: 49%;
 }
 
-#indexLinks .col-sm-6 {
-	padding: 0px 50px;
+.shortVert,
+.medVert,
+.longVert {
+	width: 2px;
+	background: white;
+	position: absolute;
+}
+
+.shortVert {
+	height: 120px;
+}
+
+.medVert {
+	height: 200px;
+}
+
+.longVert {
+	height: 300px;
+}
+
+#vert-1 {
+	left: 10%;
+}
+
+#vert-2 {
+	left: 18%;
+}
+
+#vert-3 {
+	left: 28%;
+}
+
+#vert-4 {
+	left: 38%;
+}
+
+#vert-5 {
+	right: 10%;
+}
+
+#vert-6 {
+	right: 18%;
+}
+
+#vert-7 {
+	right: 28%;
+}
+
+#vert-8 {
+	right: 38%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1441px) {
+	#lefty {
+		position: absolute;
+		top: 80px;
+	}
+
+	#right #r-small-1 {
+		top: 70px;
+	}
+
+	#right #r-med-1 {
+		top: 115px;
+	}
+
+	#r-lg-1 {
+		top: 165px;
+	}
+
+	#r-small-2 {
+		top: 200px;
+	}
+
+	#r-med-2 {
+		top: 245px;
+	}
+
+	#r-small-3 {
+		top: 285px;
+	}
+
+	#r-small-4 {
+		top: 495px;
+	}
+
+	#r-med-3 {
+		top: 525px;
+	}
+
+	#r-small-5 {
+		top: 565px;
+	}
+
+	#r-med-4 {
+		top: 605px;
+	}
+
+	#r-lg-2 {
+		top: 665px;
+	}
+
+	#r-small-6 {
+		top: 715px;
+	}
+
+	.boxLine {
+		width: 30%;
+	}
 }
 
 @media only screen and (max-width: 767px) {
 
-	.colorBox #first,
-	.colorBox #second,
-	.colorBox #third {
+	#center-circ {
+		height: 240px;
+		width: 240px;
+		z-index: 3;
+		top: -100px;
+	}
+
+	#bisect {
+		background: transparent;
+		box-shadow: none;
+		animation: none;
+		width: 100%;
+	}
+
+	#whoAre,
+	#whatDo,
+	#whoIroh {
 		position: relative;
 		left: 0px;
 		padding: 0px 30px;
+		text-align: center;
 	}
 
-	.colorBox #first{
+	#whoAre {
 		top: 120px;
 	}
 
-	.colorBox #second,
-	.colorBox #third {
-		top: 110px;
+	#whatDo {
+		top: 80px;
+	}
+
+	#whoIroh {
+		top: 70px;
+	}
+
+	.boxLine {
+		top: 0px;
+		width: 60%;
+	}
+
+	.smallCirc {
+		height: 10px;
+		width: 10px;
+		top: 100%;
+		left: -4px;
 	}
 
 	.medCirc {
+		top: 100%;
 		height: 20px;
 		width: 20px;
-		top: -8px;
-	}
-
-	@keyframes medSlide {
-		0% {
-			width: 0px;
-		}
-
-		75% {
-			width: 22%;
-		}
-
-		100% {
-			width: 20%;
-		}
-	}
-
-	@keyframes largeSlide {
-		0% {
-			width: 0px;
-		}
-
-		75% {
-			width: 85%;
-		}
-
-		100% {
-			width: 80%;
-		}
+		left: -10px;
 	}
 
 	.largeCirc {
-		height: 40px;
-		width: 40px;
-		top: -20px;
-	}
-
-	#lefty {
-		top: 20px;
-	}
-
-	#lefty #short-4 {
-		top: 350px;
-	}
-
-	#lefty #med-3 {
-		top: 435px;
-	}
-
-	#lefty #short-5 {
-		top: 480px;
-	}
-
-	#lefty #med-4 {
-		top: 530px;
-	}
-
-	#lefty #large-2 {
-		top: 580px;
-	}
-
-	#lefty #short-6 {
-		top: 635px;
-	}
-
-	#right {
-		display: none;
+		top: 100%;
+		height: 30px;
+		width: 30px;
+		left: -15px;
 	}
 
 }

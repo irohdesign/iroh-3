@@ -1535,23 +1535,20 @@ footer a, footer h3 {
 	height: auto;
 }
 
-}
-
-
-
 
 @media only screen and (max-width: 767px) {
 .navbar {
 	font-size: 30px;
-
-}
-
-.navbar button:hover {
-	transition: 2s ease;
+	height: 60px;
 }
 
 .navbar button {
-	transition: 2s ease;
+	position: relative;
+	top: -10px;
+}
+
+#contact-button {
+	top: 0px;
 }
 
 .navbar-brand {
@@ -1564,6 +1561,7 @@ footer a, footer h3 {
 	background: black;
 	position: absolute;
 	right: 0px;
+	top: 58px;
 }
 
 #top-nav ul {
@@ -1574,7 +1572,6 @@ footer a, footer h3 {
 	padding-right: 20px;
 	padding-bottom: 20px;
 }
-
 
 .proj-header-img {
 	height: 95%;
@@ -1591,6 +1588,14 @@ footer a, footer h3 {
 
 #rpc-proj {
 	margin: auto;
+}
+
+/***********************
+work
+**********************/
+
+#workHead #recentWork {
+	margin-top: 75px;
 }
 
 #workListings .col-xs-12 {
@@ -1642,6 +1647,16 @@ about
 
 #right-skill li {
 	padding: 0px;
+}
+
+#drop-line-4 {
+	height: 110px;
+	left: 25%;
+}
+
+#drop-line-7 {
+	height: 110px;
+	left: 75%;
 }
 
 }
