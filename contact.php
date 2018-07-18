@@ -136,7 +136,7 @@ if(isset($_POST['submit'])){
       </div>
 
         <input type="text" name="name" placeholder="Your Name">
-        <input type="text" name="email" placeholder="Your Email">
+        <input type="text" class="pull-right" name="email" placeholder="Your Email">
 
         <input type="submit" name="submit" value="Send">
 

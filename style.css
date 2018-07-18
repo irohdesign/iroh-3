@@ -855,7 +855,7 @@ nav span {
 }
 
 #contact-form form {
-	width: 750px;
+	width: 720px;
 	margin: 40px auto;
 	position: relative;
 }
@@ -880,17 +880,11 @@ nav span {
 	display: block;
 }
 
-#contact-form input[type="text"],
-#contact-form input[type="email"] {
-	width: 47%;
+#contact-form input[type="text"] {
+	width: 49%;
 	border: solid 2px black;
 	height: 40px;
 	padding-left: 10px;
-}
-
-#contact-form input[type="email"] {
-	position: absolute;
-	right: 0;
 }
 
 #contact-form input[type="submit"] {
