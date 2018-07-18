@@ -80,8 +80,8 @@
     <p>I'm <strong>currently accepting</strong> new projects.</p>
     <p>Let's get to know each other.</p>
 
-    <form>
-      <textarea placeholder="What do you want to build?"></textarea>
+    <form method="post" name="contactForm" action="mail.php">
+      <textarea placeholder="What do you want to build?" name="message"></textarea>
 
       <div class="row">
         <div class="col-sm-6">
@@ -114,8 +114,8 @@
         </div>
       </div>
 
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email">
 
         <input type="submit" value="Send">
 
