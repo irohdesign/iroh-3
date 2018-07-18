@@ -10,7 +10,7 @@ html, body {
 }
 
 #cover {
-	height: 100%;
+	height: 90%;
 	display: table;
 	position: relative;
 	width: 100%;
@@ -484,31 +484,7 @@ html, body {
 	padding: 0px 50px;
 }
 
-#indexLinks a {
-	text-align: center;
-	font-family: Din Alternate;
-	font-size: 28px;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	color: white;
-	position: relative;
-	padding: 18px;
-	border: solid 1px white;
-	display: block;
-	margin: auto;
-	transition: 1s;
-}
-
-#indexLinks a:hover {
-	background: white;
-	color: black;
-	transition: 1s;
-}
-
 @media only screen and (max-width: 767px) {
-	* {
-		text-align: center;
-	}
 
 	.colorBox #first,
 	.colorBox #second,
@@ -525,6 +501,78 @@ html, body {
 	.colorBox #second,
 	.colorBox #third {
 		top: 110px;
+	}
+
+	.medCirc {
+		height: 20px;
+		width: 20px;
+		top: -8px;
+	}
+
+	@keyframes medSlide {
+		0% {
+			width: 0px;
+		}
+
+		75% {
+			width: 22%;
+		}
+
+		100% {
+			width: 20%;
+		}
+	}
+
+	@keyframes largeSlide {
+		0% {
+			width: 0px;
+		}
+
+		75% {
+			width: 85%;
+		}
+
+		100% {
+			width: 80%;
+		}
+	}
+
+	.largeCirc {
+		height: 40px;
+		width: 40px;
+		top: -20px;
+	}
+
+	#lefty {
+		top: 20px;
+	}
+
+	#lefty #short-4 {
+		top: 350px;
+	}
+
+	#lefty #med-3 {
+		top: 435px;
+	}
+
+	#lefty #short-5 {
+		top: 480px;
+	}
+
+	#lefty #med-4 {
+		top: 530px;
+	}
+
+	#lefty #large-2 {
+		top: 580px;
+	}
+
+	#lefty #short-6 {
+		top: 635px;
+	}
+
+	#right {
+		display: none;
 	}
 
 }

@@ -683,8 +683,8 @@ nav span {
 }
 
 #workListings .proj-cont {
-	height: 250px;
-	width: 250px;
+	height: 235px;
+	width: 235px;
 	border-radius: 100%;
 	background: white;
 	border: solid 2.5px black;
@@ -694,8 +694,8 @@ nav span {
 }
 
 #workListings .proj-img {
-	height: 235px;
-	width: 235px;
+	height: 220px;
+	width: 220px;
 	border-radius: 100%;
 	position: absolute;
 	top: 5px;
@@ -1540,9 +1540,10 @@ footer a, footer h3 {
 
 
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
 .navbar {
 	font-size: 30px;
+
 }
 
 .navbar button:hover {
@@ -1554,10 +1555,9 @@ footer a, footer h3 {
 }
 
 .navbar-brand {
-	text-decoration: underline;
-	font-size: 40px !important;
+	font-size: 30px !important;
 	position: relative;
-	top: 13px;
+	top: 5px;
 }
 
 #top-nav {
