@@ -15,7 +15,7 @@ if(isset($_POST['submit'])){
 
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    $success = "Success! Your message was sent.";
+    $success = "<h6>Success! Your message was sent.</h6>";
     }
 ?>
 

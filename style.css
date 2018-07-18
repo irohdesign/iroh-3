@@ -435,7 +435,7 @@ nav span {
 .skill-bar {
 	position: absolute;
 	height: 100%;
-	background: #ccc;
+	background: #555;
 }
 
 #html {
@@ -1438,7 +1438,7 @@ footer a, footer h3 {
 
 .question p {
 	font-size: 16px;
-	color: #777;
+	color: #555;
 	font-weight: lighter;
 	margin-top: 15px;
 }
@@ -1540,7 +1540,7 @@ footer a, footer h3 {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 800px) {
 .navbar {
 	font-size: 30px;
 }
@@ -1595,6 +1595,53 @@ footer a, footer h3 {
 
 #workListings .col-xs-12 {
 	margin: 30px auto;
+}
+
+/***********************
+contact
+**********************/
+
+#contact-form form {
+	width: 80%;
+	text-align: center;
+}
+
+#contact-form h6 {
+	text-transform: none;
+	font-size: 16px;
+}
+
+#contact-form .checks {
+	text-align: left;
+}
+
+#contact-form input[type="text"] {
+	display: block;
+	width: 100%;
+	margin-bottom: 20px;
+	margin-top: -5px;
+}
+
+#contact-form input[type="submit"] {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+}
+
+/***********************
+about
+**********************/
+
+#questions-answers {
+	padding: 10%;
+}
+
+#left-skill li {
+	margin-right: 0px;
+}
+
+#right-skill li {
+	padding: 0px;
 }
 
 }
