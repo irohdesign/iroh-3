@@ -704,6 +704,18 @@ nav span {
 
 #workListings .proj-summary {
 	padding: 5px 15px;
+	max-width: 400px;
+	margin: auto;
+}
+
+.proj-summary a {
+	color: black;
+	transition: 0.5s;
+}
+
+.proj-summary a:hover {
+	color: #D0021B;
+	transition: 0.5s;
 }
 
 #workListings .row {
