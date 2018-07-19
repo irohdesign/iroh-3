@@ -422,7 +422,7 @@ nav span {
 }
 
 #q-and-a .row {
-	margin: 10px auto;
+	margin: 10px auto 30px;
 }
 
 .skill-box {
@@ -670,7 +670,7 @@ nav span {
 }
 
 #bisect-center {
-	height: 350px;
+	height: 400px;
 	width: 2.5px;
 	background: black;
 	position: absolute;
@@ -686,8 +686,8 @@ nav span {
 }
 
 #workListings .cent-line {
-	height: 400px;
-	width: 2.5px;
+	height: 480px;
+	width: 3px;
 	background: black;
 	position: absolute;
 	left: 50%;
@@ -1383,26 +1383,6 @@ footer a, footer h3 {
 
 #drop-line-right {
 	left: 60%;
-}
-
-@-webkit-keyframes dropLines {
-	0% {
-		height: 0px;
-	}
-
-	100% {
-		height: inherit;
-	}
-}
-
-@keyframes dropLines {
-	0% {
-		height: 0px;
-	}
-
-	100% {
-		height: inherit;
-	}
 }
 
 #about-photo {
