@@ -33,9 +33,12 @@ html, body {
 	width: 0px;
 	height: 2px;
 	background: white;
-	animation: bisectDraw 1s forwards;
-	animation-delay: 1s;
-	box-shadow: 0px 5px 10px black;
+	-webkit-animation: bisectDraw 1s forwards;
+	        animation: bisectDraw 1s forwards;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
+	-webkit-box-shadow: 0px 5px 10px black;
+	        box-shadow: 0px 5px 10px black;
 }
 
 #center-circ {
@@ -48,12 +51,16 @@ html, body {
 	display: block;
 	top: -145px;
 	margin: auto;
-	box-shadow: 0px 6px 5px #093049;
+	-webkit-box-shadow: 0px 6px 5px #093049;
+	        box-shadow: 0px 6px 5px #093049;
 	display: table;
 	overflow: hidden;
-	transform: scale(0);
-	animation: circleScale .9s forwards;
-	animation-delay: 2s;
+	-webkit-transform: scale(0);
+	        transform: scale(0);
+	-webkit-animation: circleScale .9s forwards;
+	        animation: circleScale .9s forwards;
+	-webkit-animation-delay: 2s;
+	        animation-delay: 2s;
 }
 
 #center-circ h1 {
@@ -80,8 +87,10 @@ html, body {
 	height: 2px;
 	background: white;
 	position: absolute;
-	animation: shortSlide forwards 0.5s;
-	animation-delay: 3.5s;
+	-webkit-animation: shortSlide forwards 0.5s;
+	        animation: shortSlide forwards 0.5s;
+	-webkit-animation-delay: 3.5s;
+	        animation-delay: 3.5s;
 }
 
 .smallCirc {
@@ -100,9 +109,12 @@ html, body {
 	width: 0%;
 	background: white;
 	position: absolute;
-	animation: medSlide forwards 1s;
-	animation-iteration-count: 1;
-	animation-delay: 3.8s;
+	-webkit-animation: medSlide forwards 1s;
+	        animation: medSlide forwards 1s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-delay: 3.8s;
+	        animation-delay: 3.8s;
 
 }
 
@@ -122,9 +134,12 @@ html, body {
 	width: 0%;
 	background: white;
 	position: absolute;
-	animation: largeSlide forwards 1.5s;
-	animation-iteration-count: 1;
-	animation-delay: 2.8s;
+	-webkit-animation: largeSlide forwards 1.5s;
+	        animation: largeSlide forwards 1.5s;
+	-webkit-animation-iteration-count: 1;
+	        animation-iteration-count: 1;
+	-webkit-animation-delay: 2.8s;
+	        animation-delay: 2.8s;
 }
 
 .largeCirc {
@@ -260,6 +275,16 @@ html, body {
 	top: 800px;
 }
 
+@-webkit-keyframes bisectDraw {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 100%;
+	}
+}
+
 @keyframes bisectDraw {
 	0% {
 		width: 0%;
@@ -270,17 +295,52 @@ html, body {
 	}
 }
 
-@keyframes circleScale {
+@-webkit-keyframes circleScale {
 	0% {
-		transform: scale(0);
+		-webkit-transform: scale(0);
+		        transform: scale(0);
 	}
 
 	75% {
-		transform: scale(1.03);
+		-webkit-transform: scale(1.03);
+		        transform: scale(1.03);
 	}
 
 	100% {
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes circleScale {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	75% {
+		-webkit-transform: scale(1.03);
+		        transform: scale(1.03);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+
+@-webkit-keyframes shortSlide {
+	0% {
+		width: 0px;
+	}
+
+	75% {
+		width: 16%;
+	}
+
+	100% {
+		width: 15%;
 	}
 }
 
@@ -299,6 +359,20 @@ html, body {
 	}
 }
 
+@-webkit-keyframes medSlide {
+	0% {
+		width: 0px;
+	}
+
+	75% {
+		width: 24%;
+	}
+
+	100% {
+		width: 22%;
+	}
+}
+
 @keyframes medSlide {
 	0% {
 		width: 0px;
@@ -310,6 +384,20 @@ html, body {
 
 	100% {
 		width: 22%;
+	}
+}
+
+@-webkit-keyframes largeSlide {
+	0% {
+		width: 0px;
+	}
+
+	95% {
+		width: 35%;
+	}
+
+	100% {
+		width: 32%;
 	}
 }
 
@@ -327,17 +415,37 @@ html, body {
 	}
 }
 
-@keyframes bubble {
+@-webkit-keyframes bubble {
 	0% {
-		transform: scale(0);
+		-webkit-transform: scale(0);
+		        transform: scale(0);
 	}
 
 	75% {
-		transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
 	}
 
 	100% {
-		transform: scale(1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes bubble {
+	0% {
+		-webkit-transform: scale(0);
+		        transform: scale(0);
+	}
+
+	75% {
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+
+	100% {
+		-webkit-transform: scale(1);
+		        transform: scale(1);
 	}
 }
 
@@ -367,7 +475,8 @@ html, body {
 .diamond {
 	border: solid 2px white;
 	position: absolute;
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .mini,
@@ -416,7 +525,8 @@ html, body {
 #second .boxLine {
 	position: absolute;
 	right: 0px;
-	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	        transform: rotate(180deg);
 }
 
 #third,
@@ -627,8 +737,10 @@ mobile-illustration
 
 	#bisect {
 		background: transparent;
-		box-shadow: none;
-		animation: none;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-animation: none;
+		        animation: none;
 		width: 100%;
 	}
 

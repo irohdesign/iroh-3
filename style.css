@@ -74,6 +74,7 @@ nav span {
 	width: 0;
 	height: 2px;
 	background: white;
+	-webkit-transition: width .3s;
 	transition: width .3s;
 }
 
@@ -82,12 +83,15 @@ nav span {
 }
 
 #top-nav ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 	list-style: none;
 	position: relative;
 	top: 12px;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 #top-nav ul li {
@@ -181,11 +185,13 @@ nav span {
 	text-align: center;
 	margin-top: 30px;
 	color: #666;
+	-webkit-transition: 0.5s ease;
 	transition: 0.5s ease;
 }
 
 #outcome a.scroll:hover {
 	color: red;
+	-webkit-transition: 0.5s ease;
 	transition: 0.5s ease;
 }
 
@@ -501,16 +507,21 @@ nav span {
 .link-box a {
 	background: black;
 	color: white;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 	font-family: lato, helvetica, sans-serif;
 	letter-spacing: 1px;
 	font-size: 14px;
+	-webkit-transition: 1s ease;
 	transition: 1s ease;
 }
 
 .link-box a:hover {
 	background: #666;
+	-webkit-transition: 1s ease;
 	transition: 1s ease;
 }
 
@@ -524,10 +535,13 @@ nav span {
 	text-align: center;
 	list-style: none;
 	padding: 30px 5% 0px 5%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	max-width: 900px;
 	margin: auto;
-	justify-content: space-around;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
 }
 
 .drop-content ul li {
@@ -561,7 +575,8 @@ nav span {
 .topic img,
 .topic iframe {
 	margin: 20px auto;
-	box-shadow: 0px 0px 5px #bbb;
+	-webkit-box-shadow: 0px 0px 5px #bbb;
+	        box-shadow: 0px 0px 5px #bbb;
 }
 
 #issue img {
@@ -707,11 +722,13 @@ nav span {
 
 .proj-summary a {
 	color: black;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
 .proj-summary a:hover {
 	color: #D0021B;
+	-webkit-transition: 0.5s;
 	transition: 0.5s;
 }
 
@@ -724,8 +741,12 @@ nav span {
 #workListings ul {
 	padding: 0px;
 	margin: 15px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	background: #164869;
 	padding: 3px 8px;
 }
@@ -868,6 +889,18 @@ nav span {
 	padding: 8px 10px;
 }
 
+#contact-form ::-webkit-input-placeholder {
+	color: black;
+}
+
+#contact-form :-ms-input-placeholder {
+	color: black;
+}
+
+#contact-form ::-ms-input-placeholder {
+	color: black;
+}
+
 #contact-form ::placeholder {
 	color: black;
 }
@@ -997,7 +1030,8 @@ footer a, footer h3 {
 	background: white !important;
 	opacity: 1 !important;
 	border-color: white !important;
-	filter: none;
+	-webkit-filter: none;
+	        filter: none;
 }
 
 .item {
@@ -1351,6 +1385,16 @@ footer a, footer h3 {
 	left: 60%;
 }
 
+@-webkit-keyframes dropLines {
+	0% {
+		height: 0px;
+	}
+
+	100% {
+		height: inherit;
+	}
+}
+
 @keyframes dropLines {
 	0% {
 		height: 0px;
@@ -1519,11 +1563,17 @@ footer a, footer h3 {
 }
 
 .drop-content ul {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 #seeMore .container {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	text-align: center;
 }
 
@@ -1561,7 +1611,10 @@ footer a, footer h3 {
 }
 
 #top-nav ul {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	padding: none;
 	margin: none;
 	text-align: right;
