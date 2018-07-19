@@ -608,11 +608,15 @@ mobile-illustration
 }
 
 #vertBis {
-	height: 300px;
+	height: 0px;
 	width: 3px;
 	background: white;
 	position: absolute;
 	left: 49%;
+	-webkit-animation: longDrop 1s forwards;
+	        animation: longDrop 1s forwards;
+	-webkit-animation-delay: 1.5s;
+	        animation-delay: 1.5s;
 }
 
 .shortVert,
@@ -624,15 +628,109 @@ mobile-illustration
 }
 
 .shortVert {
-	height: 120px;
+	height: 0px;
+	-webkit-animation: shortDrop 1s forwards;
+	        animation: shortDrop 1s forwards;
+	-webkit-animation-delay: 1s;
+	        animation-delay: 1s;
 }
 
 .medVert {
-	height: 200px;
+	height: 0px;
+	-webkit-animation: medDrop 1s forwards;
+	        animation: medDrop 1s forwards;
+	-webkit-animation-delay: 0.5s;
+	        animation-delay: 0.5s;
 }
 
 .longVert {
-	height: 300px;
+	height: 0px;
+	-webkit-animation: longDrop 1s forwards;
+	        animation: longDrop 1s forwards;
+}
+
+@-webkit-keyframes shortDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 155px;
+	}
+
+	100% {
+		height: 150px;
+	}
+}
+
+@keyframes shortDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 155px;
+	}
+
+	100% {
+		height: 150px;
+	}
+}
+
+@-webkit-keyframes medDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 210px;
+	}
+
+	100% {
+		height: 200px;
+	}
+}
+
+@keyframes medDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 210px;
+	}
+
+	100% {
+		height: 200px;
+	}
+}
+
+@-webkit-keyframes longDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 310px;
+	}
+
+	100% {
+		height: 300px;
+	}
+}
+
+@keyframes longDrop {
+	0% {
+		height: 0px;
+	}
+
+	75% {
+		height: 310px;
+	}
+
+	100% {
+		height: 300px;
+	}
 }
 
 #vert-1 {
@@ -732,7 +830,7 @@ mobile-illustration
 		height: 240px;
 		width: 240px;
 		z-index: 3;
-		top: -100px;
+		top: -120px;
 	}
 
 	#bisect {
