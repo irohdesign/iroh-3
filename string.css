@@ -1,7 +1,14 @@
 
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
 #background {
 	background: rgba(140, 169, 196, 0.26);
-	padding: 50px 15px;
+	padding: 8% 15px;
+	min-height: 100%;
+	width: 100%;
 }
 
 a {
@@ -156,4 +163,10 @@ a#reload {
 	left: 0px;
 	text-align: center;
 	width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	#background {
+			padding: 22% 15px;
+	}
 }
