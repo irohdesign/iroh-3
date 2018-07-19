@@ -320,9 +320,6 @@ nav span {
 	border-radius: 15px;
 }
 
-.st-img .col-sm-6 {
-}
-
 /*************************** General Case Study ***************************/
 
 .head-img {
@@ -1063,7 +1060,6 @@ footer a, footer h3 {
 	border-radius: 100%;
 	border: double 8px white;
 	width: 40%;
-	min-width: 280px;
 	max-width: 320px;
 	padding: 9px;
 	display: block;
@@ -1639,6 +1635,7 @@ about
 
 #questions-answers {
 	padding: 10%;
+	margin: ;
 }
 
 #left-skill li {
@@ -1657,6 +1654,55 @@ about
 #drop-line-7 {
 	height: 110px;
 	left: 75%;
+}
+
+#headerbox {
+	top: 40px;
+}
+
+/***********************
+case studies
+**********************/
+
+#cs-header {
+	position: relative;
+	top: -10px;
+}
+
+.head-img {
+	width: 95%;
+	height: 550px;
+}
+
+#rpc-main-img h1, #minke-main-img h1, #st-main-img h1 {
+	font-size: 3.2em;
+	position: relative;
+	top: 30px;
+}
+
+#rpc-main-img h3,
+#st-title h3 {
+	top: 30px;
+	position: relative;
+}
+
+.head-title {
+	vertical-align: middle;
+}
+
+#prereq {
+	padding: 0px;
+	margin-left: -1%;
+}
+
+#logo {
+	display: none;
+}
+
+.st-img #form {
+	width: 90%;
+}
+
 }
 
 }
