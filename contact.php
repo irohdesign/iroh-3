@@ -60,7 +60,7 @@ if(isset($_POST['submit'])){
 				  <li><a class="underlineAnim" href="index.html">Home</a></li>
 				  <li><a class="underlineAnim" href="work.html">Work</a></li>
 				  <li><a class="underlineAnim" href="about.html">About</a></li>
-				  <li><a class="underlineAnim" href="contact.html">Contact</a></li>
+				  <li><a class="underlineAnim" href="contact.php">Contact</a></li>
 			  </ul>
 		  </div><!-- end of top-nav -->
 	  </div><!-- end of container-fluid -->
