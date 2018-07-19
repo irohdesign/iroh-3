@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){
 
     mail($to,$subject,$message,$headers);
     mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    $success = "<h6>Success! Your message was sent.</h6>";
+    $success = "Message sent. Thanks and I'll get back to you soon!";
     }
 ?>
 
@@ -67,6 +67,7 @@ if(isset($_POST['submit'])){
   	    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico" />
 
     <title>Contact</title>
 
@@ -183,7 +184,7 @@ if(isset($_POST['submit'])){
 
         <input type="submit" name="submit" value="Send">
 
-        <?php echo $success; ?>
+        <p id="success"><?php echo $success; ?></p>
     </form>
 
   </section>

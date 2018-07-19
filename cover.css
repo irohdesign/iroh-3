@@ -76,7 +76,7 @@ html, body {
 	top: 1px;
 	left: 1px;
 	letter-spacing: 9px;
-	font-family: Rubik;
+	font-family: rubik, sans-serif;
 }
 
 
@@ -544,7 +544,7 @@ html, body {
 }
 
 .indexText h2 {
-	font-family: rubik;
+	font-family: rubik, sans-serif;
 	font-size: 45px;
 	letter-spacing: 1.5px;
 }
@@ -765,62 +765,68 @@ mobile-illustration
 	right: 38%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1441px) {
+@media only screen and (min-width: 850px) and (max-width: 1441px) {
 	#lefty {
 		position: absolute;
 		top: 80px;
 	}
 
 	#right #r-small-1 {
-		top: 70px;
+		top: 120px;
 	}
 
 	#right #r-med-1 {
-		top: 115px;
-	}
-
-	#r-lg-1 {
 		top: 165px;
 	}
 
+	#r-lg-1 {
+		top: 215px;
+	}
+
 	#r-small-2 {
-		top: 200px;
+		top: 250px;
 	}
 
 	#r-med-2 {
-		top: 245px;
+		top: 295px;
 	}
 
 	#r-small-3 {
-		top: 285px;
+		top: 335px;
 	}
 
 	#r-small-4 {
-		top: 495px;
+		top: 545px;
 	}
 
 	#r-med-3 {
-		top: 525px;
+		top: 575px;
 	}
 
 	#r-small-5 {
-		top: 565px;
+		top: 615px;
 	}
 
 	#r-med-4 {
-		top: 605px;
+		top: 655px;
 	}
 
 	#r-lg-2 {
-		top: 665px;
-	}
-
-	#r-small-6 {
 		top: 715px;
 	}
 
+	#r-small-6 {
+		top: 765px;
+	}
+
 	.boxLine {
-		width: 30%;
+		width: 22%;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+	.boxLine {
+		display: none;
 	}
 }
 

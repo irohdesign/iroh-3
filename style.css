@@ -27,7 +27,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Varela Round';
+	font-family: 'Varela Round', helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
@@ -56,7 +56,7 @@ nav span {
 .navbar a {
 	color: white;
 	text-shadow: 3px 3px 0px black ;
-	font-family: Din Alternate;
+	font-family: din alternate, sans-serif;
 	text-transform: uppercase;
 	font-size: 18px;
 	letter-spacing: 1px;
@@ -97,22 +97,6 @@ nav span {
 #top-nav ul li {
 	border-bottom: solid 1px transparent;
 	padding: 0px 5px;
-}
-
-/*************************** See More ***************************/
-
-#seeMore {
-	background: #164869;
-	padding: 40px 0px;
-	text-align: center;
-}
-
-#seeMore a {
-	color: white;
-	padding: 10px 7%;
-	font-size: 45px;
-	text-transform: uppercase;
-	font-family: Din Alternate;
 }
 
 /*************************** Minke CS Specific ************************/
@@ -858,15 +842,21 @@ nav span {
 }
 
 #contact-form p {
-	font-family: rubik;
+	font-family: rubik, sans-serif;
 	text-align: center;
 	font-size: 30px;
 	letter-spacing: 1px;
 }
 
+#contact-form form #success {
+	font-size: 16px;
+	text-align: left;
+	margin-top: 15px;
+}
+
 #contact-form strong {
 	font-weight: lighter;
-	font-family: rubik;
+	font-family: rubik, sans-serif;
 	color: #12537D;
 	text-decoration: underline;
 	text-transform: lowercase;
@@ -984,11 +974,11 @@ footer {
 	text-align: center;
 	color: white;
 	padding: 30px 2.5px;
-	font-family: Din Alternate;
+	font-family: din alternate, sans-serif;
 }
 
 footer a, footer h3 {
-	font-family: rubik;
+	font-family: rubik, sans-serif;
 	color: white;
 	font-size: 30px;
 }
@@ -1062,7 +1052,7 @@ footer a, footer h3 {
 }
 
 .sketchComment h4 {
-	font-family: Din Alternate;
+	font-family: din alternate, sans-serif;
 	font-size: 30px;
 	letter-spacing: 1px;
 	color: yellow;
@@ -1391,14 +1381,14 @@ footer a, footer h3 {
 }
 
 #about-photo h2 {
-	font-family: Rubik;
+	font-family: rubik, sans-serif;
 	margin: 50px auto 40px;
 	font-size: 40px;
 	letter-spacing: 2px;
 }
 
 #about-photo h4 {
-	font-family: Din Alternate, sans-serif;
+	font-family: din alternate, sans-serif;
 }
 
 #about-photo a {
@@ -1441,7 +1431,7 @@ footer a, footer h3 {
 
 #q-and-a h3 {
 	text-transform: uppercase;
-	font-family: Rubik;
+	font-family: rubik, sans-serif;
 	font-weight: 400;
 	font-size: 30px;
 }
@@ -1640,8 +1630,8 @@ contact
 	text-align: center;
 }
 
-#contact-form h6 {
-	text-transform: none;
+#contact-form p {
+	text-transform: none !important;
 	font-size: 16px;
 }
 
