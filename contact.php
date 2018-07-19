@@ -1,5 +1,17 @@
 <?php
+
+function IsChecked($chkname, $value) {
+  if(!empty($_POST[$chkname])) {
+    foreach($_POST[$chkname] as $chkval) {
+      if($chkval == $value) {
+        return true;
+      }
+    }
+  } return false;
+}
+
 if(isset($_POST['submit'])){
+
     $to = "irohdesign@outlook.com";
     $from = $_POST['email'];
     $name = $_POST['name'];
@@ -7,8 +19,38 @@ if(isset($_POST['submit'])){
     $subject = "New Information Request";
     $subject2 = "Information Request Sent!";
 
-    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message ";
+    if(IsChecked('checked', 'redesign')) {
+      $redesign = "website redesign";
+    } else {
+      $redesign = "";
+    }
+
+    if(IsChecked('checked', 'launch')) {
+      $launch = "website launch";
+    } else {
+      $launch = "";
+    }
+
+    if(IsChecked('checked', 'strategy')) {
+      $strategy = "content strategy and ideas";
+    } else {
+      $strategy = "";
+    }
+
+    if(IsChecked('checked', 'branding')) {
+      $branding = "branding and logo design";
+    } else {
+      $branding = "";
+    }
+
+    if(IsChecked('checked', 'anythingElse')) {
+      $anything = "unspecified/other topic";
+    } else {
+      $anything = "";
+    }
+
+    $message = $first_name . " wrote the following:" . "\n\n" . $_POST['message'] . "<br><br>They are interested in " . $redesign . $launch . $strategy . $branding . $anything . ".";
+    $message2 = "Hey there!<br><br> I got your message, and will be back to you very soon. <br><br>Thanks, Jalia";
 
     $headers = "From:" . $from;
     $headers2 = "From:" . $to;
@@ -103,41 +145,41 @@ if(isset($_POST['submit'])){
     <p>Let's get to know each other.</p>
 
     <form method="post" name="contactForm" action="">
-      <textarea placeholder="What do you want to build?" name="message"></textarea>
+      <textarea placeholder="What do you want to build?" name="message" required></textarea>
 
       <div class="row">
         <div class="col-sm-6">
           <label class="checks">Website Redesign
-            <input type="checkbox">
+            <input type="checkbox" name="checked[]" value="redesign">
             <span class="checkmark"></span>
           </label>
 
           <label class="checks">Website Launch
-            <input type="checkbox">
+            <input type="checkbox" name="checked[]" value="launch">
             <span class="checkmark"></span>
           </label>
 
           <label class="checks">Content Strategy &amp; Ideas
-            <input type="checkbox">
+            <input type="checkbox" name="checked[]" value="strategy">
             <span class="checkmark"></span>
           </label>
         </div>
 
         <div class="col-sm-6">
           <label class="checks">Branding &amp; Logo Design
-            <input type="checkbox">
+            <input type="checkbox" name="checked[]" value="branding">
             <span class="checkmark"></span>
           </label>
 
           <label class="checks">Anything else!
-            <input type="checkbox">
+            <input type="checkbox" name="checked[]" value="anythingElse">
             <span class="checkmark"></span>
           </label>
         </div>
       </div>
 
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="text" class="pull-right" name="email" placeholder="Your Email">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" class="pull-right" name="email" placeholder="Your Email" required>
 
         <input type="submit" name="submit" value="Send">
 
@@ -148,7 +190,6 @@ if(isset($_POST['submit'])){
 
   <footer>
     <h3><a href="index.html">Iroh Design</a> &copy; 2018</h3>
-
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="bootstrap/js/bootstrap.min.js"></script>
